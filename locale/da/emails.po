@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: da\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Medforfatter tilknyttet som deltager i indsendelsen"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Sendes af pluginnet Medforfattere som deltagere til en medforfatter, når vedkommendes konto tilknyttes en indsendelse som deltager med forfatterrollen."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Adgang til kontoen: brugernavnet og et link til at vælge adgangskode for en ny konto, eller en påmindelse om at bruge de nuværende loginoplysninger for en eksisterende konto"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Sikkert, midlertidigt link til at vælge adgangskode for en konto oprettet af pluginnet (tomt for eksisterende konti)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Du er nu deltager i indsendelse {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Kære {$recipientName}</p><p>Du er angivet som medforfatter til indsendelsen »{$submissionTitle}«, modtaget af {$contextName}.</p><p>Din konto er blevet tilknyttet indsendelsen som deltager. Fra nu af kan du følge den redaktionelle proces og se de oplysninger, der stilles til rådighed for forfatterne.</p><p>Indsendelses-ID: {$submissionId}<br />Brugernavn: {$recipientUsername}<br />Adgang: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Hvis du har spørgsmål, er du velkommen til at kontakte os på {$contactEmail}.</p>{$contextSignature}"

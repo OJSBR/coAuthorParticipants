@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: fr_CA\n"
+
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Coauteur-e lié-e en tant que participant-e à la soumission"
+
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Envoyé à un-e coauteur-e lorsque son compte est lié à une soumission en tant que participant-e avec le rôle d'auteur-e, par le plugiciel Coauteurs-es participants-es."
+
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Comment accéder au compte : le nom d'utilisateur-trice et un lien pour définir le mot de passe d'un nouveau compte, ou un rappel d'utiliser les identifiants actuels pour un compte existant"
+
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Lien sécurisé et temporaire pour définir le mot de passe d'un compte créé par le plugiciel (vide pour les comptes existants)"
+
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Vous participez désormais à la soumission {$submissionId}"
+
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>{$recipientName},</p><p>Vous figurez parmi les coauteurs-es de la soumission « {$submissionTitle} », reçue par la revue {$contextName}.</p><p>Votre compte a été lié à la soumission en tant que participant-e. Vous pouvez désormais suivre son cheminement éditorial et accéder aux renseignements mis à la disposition des auteurs-es.</p><p>Identifiant de la soumission : {$submissionId}<br />Nom d'utilisateur-trice : {$recipientUsername}<br />Accès : <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Pour toute question, n'hésitez pas à communiquer avec nous à l'adresse {$contactEmail}.</p>{$contextSignature}"

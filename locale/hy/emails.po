@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: hy\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Համահեղինակը կապակցվել է որպես ներկայացման մասնակից"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Ուղարկվում է համահեղինակին, երբ «Համահեղինակները որպես մասնակիցներ» պլագինը նրա հաշիվը կապակցում է ներկայացմանը որպես հեղինակի դերով մասնակից։"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Ինչպես մուտք գործել հաշիվ. նոր հաշվի դեպքում՝ օգտանունը և գաղտնաբառը սահմանելու հղում, իսկ գոյություն ունեցող հաշվի դեպքում՝ ընթացիկ մուտքի տվյալներն օգտագործելու հիշեցում"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Պլագինի ստեղծած հաշվի գաղտնաբառը սահմանելու անվտանգ, ժամանակավոր հղում (դատարկ է գոյություն ունեցող հաշիվների համար)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Դուք այժմ {$submissionId} ներկայացման մասնակից եք"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Հարգելի {$recipientName},</p><p>Դուք նշված եք որպես «{$submissionTitle}» ներկայացման համահեղինակ, որը ստացվել է {$contextName}-ի կողմից։</p><p>Ձեր հաշիվը կապակցվել է ներկայացմանը որպես մասնակից։ Այսուհետ Դուք կարող եք հետևել դրա խմբագրական ընթացքին և ծանոթանալ հեղինակներին հասանելի տեղեկություններին։</p><p>Ներկայացման ID: {$submissionId}<br />Օգտանուն: {$recipientUsername}<br />Մուտք: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Հարցերի դեպքում խնդրում ենք կապվել մեզ հետ {$contactEmail} հասցեով։</p>{$contextSignature}"

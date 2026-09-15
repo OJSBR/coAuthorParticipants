@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: pl\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Współautorzy jako uczestnicy"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Zamienia współautorów wymienionych na liście autorów zgłoszenia w użytkowników uczestniczących w jego obiegu redakcyjnym, z rolą autora: wyszukuje lub tworzy każde konto, dodaje rolę autora w czasopiśmie, przypisuje użytkownika do zgłoszenia i wysyła indywidualną wiadomość e-mail. Działa dla nowych zgłoszeń oraz, z poziomu wiersza poleceń, dla wcześniejszych zgłoszeń, które nadal są w obiegu."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Współautorzy są dopasowywani wyłącznie na podstawie adresu e-mail, nigdy na podstawie imienia i nazwiska. Istniejące konta nigdy nie są modyfikowane ani ponownie aktywowane. Narzędzie wiersza poleceń tools/backfill.php przetwarza zgłoszenia ukończone przed włączeniem wtyczki."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Potwierdzenie zgłoszenia"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Po włączeniu wtyczki potwierdzenie wysyłane po ukończeniu zgłoszenia zostało zmienione z „Wyślij potwierdzenie zarejestrowania zgłoszenia wszystkim autorom zgłoszenia” na „Wyślij potwierdzenie zarejestrowania zgłoszenia tylko autorowi zgłaszającemu”, aby każdy współautor otrzymywał tylko wiadomość e-mail wtyczki. Poprzednia wartość zostanie przywrócona po wyłączeniu wtyczki, chyba że w międzyczasie zmieniono ją ręcznie."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Czasopismo jest skonfigurowane tak, aby wysyłać potwierdzenie zgłoszenia wszystkim autorom. Współautorzy otrzymają tę wiadomość oraz wiadomość e-mail wtyczki. Aby otrzymywali tylko jedną, wybierz w sekcji Obieg > Wiadomości e-mail opcję „Wyślij potwierdzenie zarejestrowania zgłoszenia tylko autorowi zgłaszającemu” albo wyłącz i ponownie włącz tę wtyczkę."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Potwierdzenie zgłoszenia nie jest wysyłane do wszystkich autorów, więc współautorzy otrzymują tylko wiadomość e-mail wtyczki."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Łączenie"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Automatycznie łączyć współautorów ze zgłoszeniem po jego ukończeniu lub po dodaniu autora do zgłoszenia, które jest już w obiegu"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Tworzyć konto, gdy żaden użytkownik nie ma adresu e-mail współautora (po wyłączeniu współautor zostaje zapisany jako oczekujący)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Grupa autorów dla połączonych współautorów"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Każdy współautor jest łączony z tą grupą, niezależnie od grupy wybranej dla niego w formularzu autora zgłoszenia. Wyświetlane są tylko grupy autorów z dostępem do obiegu redakcyjnego."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Grupa „Autor” czasopisma"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Wybierz grupę autorów tego czasopisma."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "E-mail"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Wysyłać współautorowi wiadomość e-mail po połączeniu go ze zgłoszeniem"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Liczba prób dostarczenia wiadomości e-mail"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Liczba prób musi być liczbą całkowitą od 1 do 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Liczba dni ważności linku do ustawienia hasła"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Dla kont utworzonych przez wtyczkę. Link przestaje działać, gdy tylko hasło zostanie ustawione."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Liczba dni musi być liczbą całkowitą od 1 do 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Dziennik"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Zapisywać każdą operację łączenia w dzienniku błędów aplikacji (błędy są zapisywane zawsze)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Utworzono dla Pani/Pana konto o nazwie użytkownika <strong>{$username}</strong>. Aby ustawić hasło, prosimy skorzystać z tego bezpiecznego linku, ważnego przez {$days} dni: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Prosimy zalogować się, używając dotychczasowej nazwy użytkownika (<strong>{$username}</strong>) i hasła. Jeśli nie pamięta Pani/Pan hasła, można je zresetować tutaj: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

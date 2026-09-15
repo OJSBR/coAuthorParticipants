@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: uk\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Співавтори-учасники"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Перетворює співавторів, зазначених у списку авторів подання, на користувачів, які беруть участь у його редакційному робочому процесі з роллю автора: знаходить або створює кожен обліковий запис, додає роль автора в журналі, призначає користувача учасником подання та надсилає індивідуальний електронний лист. Працює з новими поданнями, а з командного рядка — і з попередніми поданнями, які ще перебувають у робочому процесі."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Співавтори зіставляються лише за адресою електронної пошти, ніколи за іменем. Наявні облікові записи ніколи не змінюються і не активуються повторно. Інструмент командного рядка tools/backfill.php обробляє подання, завершені до ввімкнення плагіна."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Підтвердження подання"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Під час увімкнення плагіна підтвердження, що надсилається після завершення подання, було змінено з «Надіслати електронний лист усім авторам» на «Надіслати електронний лист лише автору, який його подає», щоб кожен співавтор отримував лише лист плагіна. Попереднє значення відновлюється під час вимкнення плагіна, якщо його тим часом не було змінено вручну."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Журнал налаштовано надсилати підтвердження подання всім авторам. Співавтори отримають і цей лист, і лист плагіна. Щоб вони отримували лише один, виберіть у розділі «Робочий процес > Електронні листи» варіант «Надіслати електронний лист лише автору, який його подає» або вимкніть і знову ввімкніть цей плагін."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Підтвердження подання не надсилається всім авторам, тому співавтори отримують лише лист плагіна."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Прив'язування"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Автоматично прив'язувати співавторів після завершення подання або після додавання автора до подання, яке вже перебуває в робочому процесі"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Створювати обліковий запис, якщо жоден користувач не має адреси електронної пошти співавтора (якщо вимкнено, співавтор записується як такий, що очікує)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Група авторів для прив'язаних співавторів"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Кожен співавтор прив'язується до цієї групи, незалежно від того, яку групу було вибрано для нього у формі автора. Показуються лише групи авторів із доступом до робочого процесу."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Група «Автор» журналу"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Виберіть групу авторів цього журналу."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Електронна пошта"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Надсилати співавтору електронний лист після прив'язування"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Кількість спроб доставки електронного листа"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Кількість спроб має бути цілим числом від 1 до 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Термін дії посилання для встановлення пароля (у днях)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Для облікових записів, створених плагіном. Посилання перестає діяти одразу після встановлення пароля."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Кількість днів має бути цілим числом від 1 до 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Журнал подій"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Записувати кожну дію прив'язування до журналу помилок застосунку (помилки записуються завжди)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Для Вас створено обліковий запис з ім'ям користувача <strong>{$username}</strong>. Щоб задати пароль, скористайтеся цим захищеним посиланням, дійсним протягом {$days} дн.: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Увійдіть, використовуючи Ваше звичне ім'я користувача (<strong>{$username}</strong>) і пароль. Якщо Ви не пам'ятаєте пароль, його можна скинути тут: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

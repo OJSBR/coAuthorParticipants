@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: tr\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Katılımcı Ortak Yazarlar"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Bir gönderinin katkıda bulunanlar listesinde yer alan ortak yazarları, yazar rolüyle gönderinin editoryal iş akışına katılan kullanıcılara dönüştürür: her bir hesabı bulur veya oluşturur, dergide yazar rolünü ekler, kişiyi gönderiye atar ve bireysel bir e-posta gönderir. Yeni gönderilerde ve komut satırı üzerinden, hâlâ iş akışında olan önceki gönderilerde çalışır."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Ortak yazarlar yalnızca e-posta adresine göre eşleştirilir, asla ada göre eşleştirilmez. Mevcut hesaplar asla değiştirilmez veya yeniden etkinleştirilmez. tools/backfill.php komut satırı aracı, eklenti etkinleştirilmeden önce tamamlanan gönderileri işler."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Gönderi alındı bildirimi"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Eklenti etkinleştirildiğinde, bir gönderi tamamlandığında gönderilen alındı bildirimi \"tüm yazarlar\" seçeneğinden \"gönderiyi yapan yazar\" seçeneğine değiştirildi; böylece her ortak yazar yalnızca eklentinin e-postasını alır. Eklenti devre dışı bırakıldığında, bu arada elle değiştirilmemişse önceki değer geri yüklenir."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Dergi, gönderi alındı bildirimini tüm yazarlara gönderecek şekilde ayarlanmıştır. Ortak yazarlar hem bu e-postayı hem de eklentinin e-postasını alacaktır. Yalnızca birini almaları için İş Akışı > e-Postalar bölümünde alındı bildirimini gönderiyi yapan yazara ayarlayın ya da bu eklentiyi devre dışı bırakıp yeniden etkinleştirin."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Gönderi alındı bildirimi tüm yazarlara gönderilmediğinden ortak yazarlar yalnızca eklentinin e-postasını alır."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Bağlama"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Bir gönderi tamamlandığında veya hâlihazırda iş akışında olan bir gönderiye katkıda bulunan eklendiğinde ortak yazarları otomatik olarak bağla"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Hiçbir kullanıcı ortak yazarın e-posta adresine sahip değilse hesap oluştur (kapalıyken ortak yazar beklemede olarak kaydedilir)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Bağlanan ortak yazarlar için yazar grubu"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Katkıda bulunan formunda kendileri için hangi grup seçilmiş olursa olsun, tüm ortak yazarlar bu grupla bağlanır. Yalnızca iş akışına erişimi olan yazar grupları listelenir."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Derginin Yazar grubu"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Bu dergiye ait bir yazar grubu seçin."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "E-posta"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Ortak yazar bağlandığında kendisine e-posta gönder"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "E-posta gönderim denemesi sayısı"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Deneme sayısı 1 ile 10 arasında bir tam sayı olmalıdır."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Şifre bağlantısının geçerli olduğu gün sayısı"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Eklenti tarafından oluşturulan hesaplar için. Bağlantı, şifre belirlenir belirlenmez geçersiz hâle gelir."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Gün sayısı 1 ile 30 arasında bir tam sayı olmalıdır."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Günlük"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Her bağlama işlemini uygulamanın hata günlüğüne yaz (hatalar her zaman yazılır)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Sizin için <strong>{$username}</strong> kullanıcı adıyla bir hesap oluşturulmuştur. Şifrenizi belirlemek için {$days} gün geçerli olan bu güvenli bağlantıyı kullanınız: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Her zamanki kullanıcı adınız (<strong>{$username}</strong>) ve şifrenizle giriş yapınız. Şifrenizi hatırlamıyorsanız buradan sıfırlayabilirsiniz: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

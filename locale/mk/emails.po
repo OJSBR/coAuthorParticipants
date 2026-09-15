@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: mk\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Коавтор поврзан како учесник во поднесок"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Се испраќа до коавтор кога плагинот „Коавтори како учесници“ ќе ја поврзе неговата сметка со поднесок како учесник со улога автор."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Како да се пристапи до сметката: корисничкото име и врска за поставување лозинка за нова сметка, или потсетник да се користат тековните податоци за најава за постојна сметка"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Безбедна, привремена врска за поставување на лозинката на сметка создадена од плагинот (празна за постојни сметки)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Сега сте учесник во поднесокот {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Почитуван/а {$recipientName},</p><p>Наведени сте како коавтор на поднесокот „{$submissionTitle}“, примен од {$contextName}.</p><p>Вашата сметка е поврзана со поднесокот како учесник. Отсега можете да го следите неговиот уреднички тек и да пристапувате до информациите достапни за авторите.</p><p>ID на поднесокот: {$submissionId}<br />Корисничко име: {$recipientUsername}<br />Пристап: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Доколку имате прашања, ве молиме контактирајте нè на {$contactEmail}.</p>{$contextSignature}"

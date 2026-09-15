@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: hu\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "A beküldés résztvevőjeként összekapcsolt társszerző"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "A Társszerzők mint résztvevők bővítmény küldi a társszerzőnek, amikor fiókját szerző szerepkörű résztvevőként egy beküldéshez kapcsolja."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "A fiók elérésének módja: új fiók esetén a felhasználónév és egy jelszóbeállító hivatkozás, meglévő fiók esetén emlékeztető a jelenlegi bejelentkezési adatok használatára"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Biztonságos, ideiglenes hivatkozás a bővítmény által létrehozott fiók jelszavának beállításához (meglévő fiókok esetén üres)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Ön mostantól a(z) {$submissionId} azonosítójú beküldés résztvevője"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Tisztelt {$recipientName}!</p><p>Önt társszerzőként tüntették fel a(z) {$contextName} folyóirathoz beérkezett „{$submissionTitle}” című beküldésben.</p><p>Fiókját résztvevőként összekapcsoltuk a beküldéssel. Mostantól nyomon követheti a beküldés szerkesztési folyamatát, és hozzáférhet a szerzők számára elérhetővé tett információkhoz.</p><p>Beküldés azonosítója: {$submissionId}<br />Felhasználónév: {$recipientUsername}<br />Hozzáférés: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Ha kérdése van, kérjük, forduljon hozzánk a(z) {$contactEmail} címen.</p>{$contextSignature}"

@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: da\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Medforfattere som deltagere"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Gør de medforfattere, der er angivet blandt bidragyderne til en indsendelse, til brugere, der deltager i indsendelsens redaktionelle workflow med forfatterrollen: finder eller opretter hver konto, tilføjer forfatterrollen i tidsskriftet, tildeler personen til indsendelsen og sender en individuel e-mail. Virker på nye indsendelser og, via kommandolinjen, på tidligere indsendelser, der stadig er i workflowet."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Medforfattere matches udelukkende på e-mailadresse, aldrig på navn. Eksisterende konti bliver aldrig ændret eller genaktiveret. Kommandolinjeværktøjet tools/backfill.php behandler indsendelser, der blev afsluttet, før pluginnet blev aktiveret."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Bekræftelse af indsendelse"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Da pluginnet blev aktiveret, blev bekræftelsen, der sendes, når en indsendelse afsluttes, ændret fra »alle forfattere« til »kun den indsendende forfatter«, så hver medforfatter kun modtager pluginnets e-mail. Den tidligere værdi gendannes, når pluginnet deaktiveres, medmindre den er blevet ændret manuelt i mellemtiden."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Tidsskriftet er indstillet til at sende bekræftelsen af indsendelse til alle forfattere. Medforfattere vil modtage både den e-mail og pluginnets e-mail. Hvis de kun skal have én, skal du indstille bekræftelsen til den indsendende forfatter under Workflow > E-mails eller deaktivere og aktivere dette plugin igen."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Bekræftelsen af indsendelse sendes ikke til alle forfattere, så medforfattere modtager kun pluginnets e-mail."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Tilknytning"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Tilknyt medforfattere automatisk, når en indsendelse afsluttes, eller når en bidragyder tilføjes til en indsendelse, der allerede er i workflowet"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Opret en konto, når ingen bruger har medforfatterens e-mailadresse (når slået fra, registreres medforfatteren som afventende)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Forfattergruppe for tilknyttede medforfattere"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Alle medforfattere tilknyttes denne gruppe, uanset hvilken gruppe der blev valgt for dem i bidragyderformularen. Kun forfattergrupper med adgang til workflowet vises."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Tidsskriftets Forfatter-gruppe"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Vælg en forfattergruppe i dette tidsskrift."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "E-mail"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Send medforfatteren en e-mail, når vedkommende tilknyttes"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Forsøg på levering af e-mail"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Antallet af forsøg skal være et helt tal fra 1 til 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Antal dage, linket til adgangskoden er gyldigt"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "For konti oprettet af pluginnet. Linket holder op med at virke, så snart adgangskoden er valgt."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Antallet af dage skal være et helt tal fra 1 til 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Log"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Skriv hver tilknytningshandling i applikationens fejllog (fejl skrives altid)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Der er oprettet en konto til dig med brugernavnet <strong>{$username}</strong>. Brug dette sikre link, der er gyldigt i {$days} dage, til at vælge din adgangskode: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Log ind med dit sædvanlige brugernavn (<strong>{$username}</strong>) og din adgangskode. Hvis du ikke kan huske din adgangskode, kan du nulstille den her: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

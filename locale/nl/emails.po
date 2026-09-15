@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: nl\n"
+
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Medeauteur gekoppeld als deelnemer aan de inzending"
+
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Wordt door de plugin Medeauteurs als deelnemers naar een medeauteur gestuurd wanneer diens account als deelnemer met de rol van auteur aan een inzending wordt gekoppeld."
+
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Toegang tot het account: de gebruikersnaam en een link om het wachtwoord in te stellen bij een nieuw account, of een herinnering om de huidige inloggegevens te gebruiken bij een bestaand account"
+
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Beveiligde, tijdelijke link om het wachtwoord in te stellen van een account dat door de plugin is aangemaakt (leeg bij bestaande accounts)"
+
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "U bent nu deelnemer aan inzending {$submissionId}"
+
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Geachte {$recipientName},</p><p>U bent opgegeven als medeauteur van de inzending ‘{$submissionTitle}’, ontvangen door {$contextName}.</p><p>Uw account is als deelnemer aan de inzending gekoppeld. Vanaf nu kunt u de redactionele voortgang volgen en de informatie raadplegen die voor de auteurs beschikbaar wordt gesteld.</p><p>Inzendings-ID: {$submissionId}<br />Gebruikersnaam: {$recipientUsername}<br />Toegang: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Hebt u vragen, neem dan contact met ons op via {$contactEmail}.</p>{$contextSignature}"

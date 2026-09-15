@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: sl\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Soavtor povezan kot udeleženec prispevka"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Pošlje se soavtorju, ko vtičnik »Soavtorji kot udeleženci« poveže njegov račun s prispevkom kot udeleženca z vlogo avtorja."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Kako dostopati do računa: uporabniško ime in povezava za nastavitev gesla pri novem računu ali opomnik za uporabo obstoječih prijavnih podatkov pri obstoječem računu"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Varna, začasna povezava za nastavitev gesla računa, ki ga je ustvaril vtičnik (prazno pri obstoječih računih)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Postali ste udeleženec prispevka {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Spoštovani {$recipientName},</p><p>Navedeni ste kot soavtor prispevka »{$submissionTitle}«, ki ga je prejela revija {$contextName}.</p><p>Vaš račun je bil povezan s prispevkom kot udeleženec. Odslej lahko spremljate njegov potek v uredniškem postopku in dostopate do informacij, ki so na voljo avtorjem.</p><p>ID prispevka: {$submissionId}<br />Uporabniško ime: {$recipientUsername}<br />Dostop: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Za morebitna vprašanja nas prosimo kontaktirajte na {$contactEmail}.</p>{$contextSignature}"

@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: hy\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Համահեղինակները որպես մասնակիցներ"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Ներկայացման աջակիցների ցուցակում նշված համահեղինակներին վերածում է օգտատերերի, որոնք հեղինակի դերով մասնակցում են այդ ներկայացման խմբագրական աշխատանքային ընթացքին. գտնում կամ ստեղծում է յուրաքանչյուր հաշիվը, ամսագրում ավելացնում է հեղինակի դերը, նշանակում է նրան ներկայացմանը և ուղարկում է անհատական նամակ։ Գործում է նոր ներկայացումների դեպքում, իսկ հրամանային տողից՝ նաև դեռևս աշխատանքային ընթացքում գտնվող ավելի վաղ ներկայացումների դեպքում։"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Համահեղինակները համադրվում են միայն էլ․ փոստի հասցեով, երբեք՝ անունով։ Գոյություն ունեցող հաշիվները երբեք չեն փոփոխվում կամ վերաակտիվացվում։ Հրամանային տողի tools/backfill.php գործիքը մշակում է պլագինի միացումից առաջ ավարտված ներկայացումները։"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Ներկայացման ստացման հաստատում"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Պլագինը միացնելիս ներկայացումն ավարտվելու ժամանակ ուղարկվող ստացման հաստատումը «բոլոր հեղինակներին» տարբերակից փոխվել է «միայն ներկայացնող հեղինակին» տարբերակի, որպեսզի յուրաքանչյուր համահեղինակ ստանա միայն պլագինի նամակը։ Նախկին արժեքը վերականգնվում է պլագինն անջատելիս, եթե այդ ընթացքում այն ձեռքով չի փոխվել։"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Ամսագիրը կարգավորված է ներկայացման ստացման հաստատումը բոլոր հեղինակներին ուղարկելու համար։ Համահեղինակները կստանան և՛ այդ նամակը, և՛ պլագինի նամակը։ Որպեսզի նրանք ստանան միայն մեկը, Աշխատանքային ընթացք > Էլ․ նամակներ բաժնում ստացման հաստատումը սահմանեք միայն ներկայացնող հեղինակին, կամ անջատեք և նորից միացրեք այս պլագինը։"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Ներկայացման ստացման հաստատումը չի ուղարկվում բոլոր հեղինակներին, ուստի համահեղինակները ստանում են միայն պլագինի նամակը։"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Կապակցում"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Ավտոմատ կապակցել համահեղինակներին, երբ ներկայացումն ավարտվում է, կամ երբ աջակից է ավելացվում արդեն աշխատանքային ընթացքում գտնվող ներկայացմանը"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Ստեղծել հաշիվ, երբ ոչ մի օգտատեր չունի համահեղինակի էլ․ փոստի հասցեն (անջատված լինելու դեպքում համահեղինակը գրանցվում է որպես սպասման մեջ գտնվող)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Կապակցված համահեղինակների հեղինակների խումբ"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Յուրաքանչյուր համահեղինակ կապակցվում է այս խմբի հետ՝ անկախ այն բանից, թե աջակցի ձևում որ խումբն է ընտրվել նրա համար։ Ցուցադրվում են միայն աշխատանքային ընթացքին հասանելիություն ունեցող հեղինակների խմբերը։"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Ամսագրի «Հեղինակ» խումբը"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Ընտրեք այս ամսագրի հեղինակների խումբ։"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Էլ․ փոստ"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Նամակ ուղարկել համահեղինակին, երբ նա կապակցվում է"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Նամակի ուղարկման փորձերի քանակը"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Փորձերի քանակը պետք է լինի 1-ից 10 ամբողջ թիվ։"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Գաղտնաբառի հղման վավերականության օրերը"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Պլագինի ստեղծած հաշիվների համար։ Հղումը դադարում է գործել, հենց որ գաղտնաբառը սահմանվում է։"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Օրերի քանակը պետք է լինի 1-ից 30 ամբողջ թիվ։"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Մատյան"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Կապակցման յուրաքանչյուր գործողություն գրանցել հավելվածի սխալների մատյանում (սխալները միշտ գրանցվում են)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Ձեզ համար ստեղծվել է հաշիվ <strong>{$username}</strong> օգտանունով։ Ձեր գաղտնաբառն ընտրելու համար օգտագործեք այս անվտանգ հղումը, որը վավեր է {$days} օր՝ <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Մուտք գործեք Ձեր սովորական օգտանունով (<strong>{$username}</strong>) և գաղտնաբառով։ Եթե չեք հիշում Ձեր գաղտնաբառը, կարող եք այն վերակայել այստեղ՝ <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

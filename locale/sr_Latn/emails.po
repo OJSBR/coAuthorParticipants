@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: sr_Latn\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Koautor povezan kao učesnik predaje"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Šalje se koautoru kada dodatak „Koautori kao učesnici“ poveže njegov nalog sa predajom kao učesnika sa ulogom autora."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Kako pristupiti nalogu: korisničko ime i link za postavljanje lozinke za novi nalog, ili podsetnik da se koriste postojeći pristupni podaci za postojeći nalog"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Bezbedan, privremeni link za postavljanje lozinke naloga koji je kreirao dodatak (prazno za postojeće naloge)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Sada ste učesnik predaje {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Poštovani/a {$recipientName},</p><p>Navedeni ste kao koautor predaje „{$submissionTitle}“, koju je primio časopis {$contextName}.</p><p>Vaš nalog je povezan sa predajom kao učesnik. Od sada možete pratiti njen urednički tok i pristupati informacijama dostupnim autorima.</p><p>ID predaje: {$submissionId}<br />Korisničko ime: {$recipientUsername}<br />Pristup: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Ukoliko imate pitanja, molimo Vas da nas kontaktirate na {$contactEmail}.</p>{$contextSignature}"

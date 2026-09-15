@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: sl\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Soavtorji kot udeleženci"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Soavtorje, navedene med sodelujočimi pri prispevku, spremeni v uporabnike, ki z vlogo avtorja sodelujejo v uredniškem delovnem toku prispevka: poišče ali ustvari račun vsakega od njih, doda vlogo avtorja v reviji, ga dodeli prispevku in pošlje posamičen email. Deluje pri novih prispevkih in, prek ukazne vrstice, pri starejših prispevkih, ki so še v delovnem toku."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Soavtorji se prepoznajo le po email naslovu, nikoli po imenu. Obstoječi računi se nikoli ne spremenijo ali ponovno aktivirajo. Orodje ukazne vrstice tools/backfill.php obdela prispevke, oddane pred omogočenjem vtičnika."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Potrditev oddaje prispevka"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Ob omogočenju vtičnika je bila potrditev, ki se pošlje ob zaključku oddaje prispevka, spremenjena iz »vsem avtorjem« v »avtorju, ki je oddal prispevek«, tako da vsak soavtor prejme le email vtičnika. Prejšnja vrednost se obnovi, ko je vtičnik onemogočen, razen če je bila medtem ročno spremenjena."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Revija je nastavljena tako, da potrditev oddaje prispevka pošlje vsem avtorjem. Soavtorji bodo prejeli ta email in tudi email vtičnika. Da bi prejeli le enega, v Delovni tok > Emaili nastavite pošiljanje potrditve le avtorju, ki je oddal prispevek, ali pa ta vtičnik onemogočite in ponovno omogočite."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Potrditev oddaje prispevka se ne pošilja vsem avtorjem, zato soavtorji prejmejo le email vtičnika."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Povezovanje"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Samodejno poveži soavtorje, ko je oddaja prispevka zaključena ali ko je sodelavec dodan prispevku, ki je že v delovnem toku"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Ustvari račun, ko noben uporabnik nima email naslova soavtorja (ko je izklopljeno, je soavtor zabeležen kot čakajoč)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Skupina avtorjev za povezane soavtorje"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Vsak soavtor je povezan s to skupino, ne glede na to, katera skupina je bila zanj izbrana v obrazcu sodelavca. Prikazane so le skupine avtorjev z dostopom do delovnega toka."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Skupina »Avtor« revije"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Izberite skupino avtorjev te revije."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Email"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Pošlji soavtorju email, ko je povezan"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Število poskusov pošiljanja emaila"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Število poskusov mora biti celo število od 1 do 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Število dni veljavnosti povezave za geslo"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Za račune, ki jih ustvari vtičnik. Povezava preneha delovati takoj, ko je geslo nastavljeno."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Število dni mora biti celo število od 1 do 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Dnevnik"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Zapiši vsako dejanje povezovanja v dnevnik napak aplikacije (napake se vedno zapišejo)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Za vas je bil ustvarjen račun z uporabniškim imenom <strong>{$username}</strong>. Za izbiro gesla prosimo uporabite to varno povezavo, ki velja {$days} dni: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Prijavite se s svojim običajnim uporabniškim imenom (<strong>{$username}</strong>) in geslom. Če se gesla ne spomnite, ga lahko ponastavite tukaj: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

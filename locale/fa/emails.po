@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: fa\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "اتصال نویسنده همکار به‌عنوان مشارکت‌کننده مقاله ارسالی"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "هنگامی که افزونه «نویسندگان همکار به‌عنوان مشارکت‌کننده» حساب یک نویسنده همکار را به‌عنوان مشارکت‌کننده با نقش نویسنده به یک مقاله ارسالی متصل می‌کند، برای او فرستاده می‌شود."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "نحوه دسترسی به حساب: نام کاربری و پیوند تعیین رمز عبور برای حساب جدید، یا یادآوری استفاده از اطلاعات ورود فعلی برای حساب موجود"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "پیوند امن و موقت برای تعیین رمز عبور حسابی که افزونه ایجاد کرده است (برای حساب‌های موجود خالی است)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "شما اکنون مشارکت‌کننده مقاله ارسالی {$submissionId} هستید"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>{$recipientName} گرامی،</p><p>نام شما به‌عنوان نویسنده همکار مقاله ارسالی «{$submissionTitle}» که به {$contextName} رسیده، ذکر شده است.</p><p>حساب شما به‌عنوان مشارکت‌کننده به این مقاله ارسالی متصل شده است. از این پس می‌توانید روند پیشرفت سردبیری آن را پیگیری کنید و به اطلاعاتی که در اختیار نویسندگان قرار می‌گیرد دسترسی داشته باشید.</p><p>شناسه مقاله ارسالی: {$submissionId}<br />نام کاربری: {$recipientUsername}<br />دسترسی: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>در صورت داشتن هرگونه پرسش، لطفاً از طریق {$contactEmail} با ما تماس بگیرید.</p>{$contextSignature}"

@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ca\n"
+
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Coautor/a vinculat com a participant de la tramesa"
+
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "S'envia a un coautor/a quan el seu compte es vincula a una tramesa com a participant amb el rol d'autor/a, mitjançant el connector Coautors participants."
+
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Com accedir al compte: el nom d'usuari/ària i un enllaç per establir la contrasenya, si el compte és nou, o un recordatori per utilitzar les credencials actuals, si el compte ja existeix"
+
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Enllaç segur i temporal per establir la contrasenya d'un compte creat pel connector (buit per als comptes existents)"
+
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Ara sou participant de la tramesa {$submissionId}"
+
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Benvolgut/uda {$recipientName},</p><p>Heu estat indicat/ada com a coautor/a de la tramesa «{$submissionTitle}», rebuda per {$contextName}.</p><p>El vostre compte s'ha vinculat a la tramesa com a participant. D'ara endavant en podreu seguir el progrés editorial i accedir a la informació que es posa a disposició dels autors/ores.</p><p>Identificador de la tramesa: {$submissionId}<br />Nom d'usuari/ària: {$recipientUsername}<br />Accés: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Si teniu qualsevol dubte, poseu-vos en contacte amb nosaltres a {$contactEmail}.</p>{$contextSignature}"

@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: fa\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "نویسندگان همکار به‌عنوان مشارکت‌کننده"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "نویسندگان همکاری را که در فهرست پدیدآورندگان یک مقاله ارسالی آمده‌اند، به کاربرانی تبدیل می‌کند که با نقش نویسنده در گردش کار سردبیری آن مشارکت دارند: حساب هر نفر را پیدا یا ایجاد می‌کند، نقش نویسنده را در مجله اضافه می‌کند، او را به مقاله ارسالی انتساب می‌دهد و یک ایمیل اختصاصی ارسال می‌کند. روی مقالات ارسالی جدید و، از طریق خط فرمان، روی مقالات ارسالی قبلی که هنوز در گردش کار هستند عمل می‌کند."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "نویسندگان همکار فقط بر اساس نشانی ایمیل تطبیق داده می‌شوند، هرگز بر اساس نام. حساب‌های موجود هرگز تغییر داده نمی‌شوند یا دوباره فعال نمی‌شوند. ابزار خط فرمان tools/backfill.php مقالات ارسالی‌ای را که پیش از فعال‌سازی افزونه تکمیل شده‌اند پردازش می‌کند."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "اعلام وصول مقاله ارسالی"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "هنگام فعال‌سازی افزونه، اعلام وصولی که پس از تکمیل ارسال مقاله فرستاده می‌شود از «همه نویسندگان» به «نویسنده ارسال‌کننده» تغییر یافت تا هر نویسنده همکار فقط ایمیل افزونه را دریافت کند. مقدار قبلی هنگام غیرفعال کردن افزونه بازگردانده می‌شود، مگر اینکه در این فاصله به‌صورت دستی تغییر کرده باشد."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "مجله طوری تنظیم شده است که اعلام وصول مقاله ارسالی را برای همه نویسندگان بفرستد. نویسندگان همکار هم آن ایمیل و هم ایمیل افزونه را دریافت خواهند کرد. برای اینکه فقط یکی برایشان ارسال شود، اعلام وصول را در گردش کار > ایمیل روی نویسنده ارسال‌کننده تنظیم کنید، یا این افزونه را غیرفعال و دوباره فعال کنید."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "اعلام وصول مقاله ارسالی برای همه نویسندگان فرستاده نمی‌شود، بنابراین نویسندگان همکار فقط ایمیل افزونه را دریافت می‌کنند."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "اتصال"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "اتصال خودکار نویسندگان همکار هنگام تکمیل ارسال مقاله، یا هنگام افزودن پدیدآورنده به مقاله‌ای که از قبل در گردش کار است"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "ایجاد حساب هنگامی که هیچ کاربری نشانی ایمیل نویسنده همکار را ندارد (در صورت غیرفعال بودن، نویسنده همکار با وضعیت «در انتظار» ثبت می‌شود)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "گروه نویسنده برای نویسندگان همکار متصل‌شده"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "همه نویسندگان همکار، صرف‌نظر از گروهی که در فرم پدیدآورنده برایشان انتخاب شده است، با این گروه متصل می‌شوند. فقط گروه‌های نویسنده‌ای که به گردش کار دسترسی دارند فهرست می‌شوند."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "گروه «نویسنده» مجله"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "یک گروه نویسنده از این مجله انتخاب کنید."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "ایمیل"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "ارسال ایمیل به نویسنده همکار هنگام اتصال او"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "تعداد تلاش‌های ارسال ایمیل"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "تعداد تلاش‌ها باید عددی صحیح از 1 تا 10 باشد."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "مدت اعتبار پیوند رمز عبور (روز)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "برای حساب‌هایی که افزونه ایجاد کرده است. پیوند به محض تعیین رمز عبور از کار می‌افتد."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "تعداد روزها باید عددی صحیح از 1 تا 30 باشد."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "گزارش رویدادها"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "ثبت هر عملیات اتصال در گزارش خطاهای برنامه (خطاها همیشه ثبت می‌شوند)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>یک حساب کاربری با نام کاربری <strong>{$username}</strong> برای شما ایجاد شده است. برای انتخاب رمز عبور خود، از این پیوند امن که به مدت {$days} روز معتبر است استفاده کنید: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>با نام کاربری همیشگی خود (<strong>{$username}</strong>) و رمز عبور خود وارد شوید. اگر رمز عبور خود را به خاطر ندارید، می‌توانید آن را از اینجا بازنشانی کنید: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

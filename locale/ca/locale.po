@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ca\n"
+
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Coautors participants"
+
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Converteix els coautors/ores indicats a la llista de contribuïdors/ores d'una tramesa en usuaris/àries que participen en el seu circuit de treball editorial, amb el rol d'autor/a: localitza o crea cada compte, afegeix el rol d'autor/a a la revista, assigna la persona a la tramesa i li envia un correu electrònic individual. Actua sobre les trameses noves i, des de la línia d'ordres, sobre les trameses anteriors que encara són al circuit de treball."
+
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Els coautors/ores s'identifiquen només per l'adreça de correu electrònic, mai pel nom. Els comptes existents no es modifiquen ni es reactiven mai. L'eina de línia d'ordres tools/backfill.php processa les trameses completades abans d'habilitar el connector."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Confirmació de la tramesa"
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "En habilitar el connector, la confirmació que s'envia quan es completa una tramesa va passar de «tots els autors/ores» a «només l'autor/a que fa la tramesa», perquè cada coautor/a rebi només el correu electrònic del connector. El valor anterior es restableix quan s'inhabilita el connector, tret que s'hagi modificat manualment mentrestant."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "La revista està configurada per enviar la confirmació de la tramesa a tots els autors/ores. Els coautors/ores rebran aquest correu electrònic i també el del connector. Perquè només en rebin un, configureu la confirmació perquè s'enviï només a l'autor/a que fa la tramesa a Circuit de treball > Correus electrònics, o inhabiliteu i torneu a habilitar aquest connector."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "La confirmació de la tramesa no s'envia a tots els autors/ores, de manera que els coautors/ores només reben el correu electrònic del connector."
+
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Vinculació"
+
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Vincular automàticament els coautors/ores quan es completa una tramesa, o quan s'afegeix un contribuïdor/a a una tramesa que ja és al circuit de treball"
+
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Crear un compte quan cap usuari/ària no tingui l'adreça de correu electrònic del coautor/a (si està desactivat, el coautor/a queda registrat com a pendent)"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Grup d'autor/a per als coautors/ores vinculats"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Tots els coautors/ores es vinculen amb aquest grup, independentment del grup que s'hagi triat per a ells al formulari del contribuïdor/a. Només es mostren els grups d'autor/a amb accés al circuit de treball."
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "El grup Autor/a de la revista"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Trieu un grup d'autor/a d'aquesta revista."
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Correu electrònic"
+
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Enviar un correu electrònic al coautor/a quan se'l vinculi"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Intents d'enviament del correu electrònic"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "El nombre d'intents ha de ser un nombre enter entre 1 i 10."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Dies de validesa de l'enllaç de contrasenya"
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Per als comptes creats pel connector. L'enllaç deixa de funcionar tan bon punt s'estableix la contrasenya."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "El nombre de dies ha de ser un nombre enter entre 1 i 30."
+
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Registre"
+
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Registrar cada acció de vinculació al registre d'errors de l'aplicació (els errors es registren sempre)"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>S'ha creat un compte per a vós amb el nom d'usuari/ària <strong>{$username}</strong>. Per triar la vostra contrasenya, utilitzeu aquest enllaç segur, vàlid durant {$days} dies: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Inicieu la sessió amb el vostre nom d'usuari/ària habitual (<strong>{$username}</strong>) i la vostra contrasenya. Si no recordeu la contrasenya, podeu restablir-la aquí: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

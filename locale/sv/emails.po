@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: sv\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Medförfattare kopplad som deltagare i bidraget"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Skickas av pluginet Medförfattare som deltagare till en medförfattare när dennes konto kopplas till ett bidrag som deltagare med författarrollen."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Hur man kommer åt kontot: användarnamnet och en länk för att välja lösenord för ett nytt konto, eller en påminnelse om att använda de nuvarande inloggningsuppgifterna för ett befintligt konto"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Säker, tillfällig länk för att välja lösenord för ett konto som skapats av pluginet (tom för befintliga konton)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Du är nu deltagare i bidrag {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Bästa {$recipientName},</p><p>Du har angetts som medförfattare till bidraget ”{$submissionTitle}”, som har inkommit till {$contextName}.</p><p>Ditt konto har kopplats till bidraget som deltagare. Från och med nu kan du följa den redaktionella processen och ta del av den information som görs tillgänglig för författarna.</p><p>Bidrags-ID: {$submissionId}<br />Användarnamn: {$recipientUsername}<br />Åtkomst: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Om du har några frågor är du välkommen att kontakta oss på {$contactEmail}.</p>{$contextSignature}"

@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: sr_Latn\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Koautori kao učesnici"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Pretvara koautore navedene među saradnicima predaje u korisnike koji učestvuju u njenom uredničkom procesu rada, sa ulogom autora: pronalazi ili kreira nalog svakog od njih, dodaje ulogu autora u časopisu, dodeljuje ga predaji i šalje pojedinačni imejl. Radi na novim predajama i, putem komandne linije, na ranijim predajama koje su još uvek u procesu rada."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Koautori se prepoznaju isključivo po imejl adresi, nikada po imenu. Postojeći nalozi se nikada ne menjaju niti ponovo aktiviraju. Alat za komandnu liniju tools/backfill.php obrađuje predaje završene pre nego što je dodatak omogućen."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Potvrda prijema predaje"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Prilikom omogućavanja dodatka, potvrda koja se šalje po završetku predaje promenjena je sa „svim autorima“ na „autoru koji je izvršio predaju“, kako bi svaki koautor primio samo imejl dodatka. Prethodna vrednost se vraća kada se dodatak onemogući, osim ako u međuvremenu nije ručno promenjena."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Časopis je podešen da potvrdu prijema predaje šalje svim autorima. Koautori će primiti taj imejl i imejl dodatka. Da bi primali samo jedan, podesite da se potvrda šalje autoru koji je izvršio predaju u Proces rada > Imejlovi, ili onemogućite pa ponovo omogućite ovaj dodatak."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Potvrda prijema predaje se ne šalje svim autorima, tako da koautori primaju samo imejl dodatka."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Povezivanje"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Automatski poveži koautore kada se predaja završi ili kada se saradnik doda predaji koja je već u procesu rada"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Kreiraj nalog kada nijedan korisnik nema imejl adresu koautora (kada je isključeno, koautor se evidentira kao na čekanju)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Grupa autora za povezane koautore"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Svaki koautor se povezuje sa ovom grupom, bez obzira na to koja je grupa za njega izabrana u formularu saradnika. Prikazuju se samo grupe autora sa pristupom procesu rada."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Grupa „Autor“ časopisa"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Izaberite grupu autora ovog časopisa."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Imejl"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Pošalji koautoru imejl kada bude povezan"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Broj pokušaja slanja imejla"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Broj pokušaja mora biti ceo broj od 1 do 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Broj dana važenja linka za lozinku"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Za naloge koje je kreirao dodatak. Link prestaje da važi čim se lozinka postavi."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Broj dana mora biti ceo broj od 1 do 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Evidencija"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Upisuj svaku radnju povezivanja u dnevnik grešaka aplikacije (greške se uvek upisuju)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Za Vas je kreiran nalog sa korisničkim imenom <strong>{$username}</strong>. Da biste izabrali lozinku, molimo Vas da koristite ovaj bezbedan link, koji važi {$days} dana: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Prijavite se svojim uobičajenim korisničkim imenom (<strong>{$username}</strong>) i lozinkom. Ako se ne sećate lozinke, možete je promeniti ovde: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

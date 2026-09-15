@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: eu\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Egilekide parte-hartzaileak"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Bidalketa baten kolaboratzaileen artean zerrendatutako egilekideak bidalketaren lan-fluxu editorialean egile-rolarekin parte hartzen duten erabiltzaile bihurtzen ditu: kontu bakoitza bilatu edo sortzen du, egile-rola gehitzen du aldizkarian, erabiltzailea bidalketari esleitzen dio eta banakako mezu elektroniko bat bidaltzen du. Bidalketa berrietan funtzionatzen du eta, komando-lerrotik, oraindik lan-fluxuan dauden lehenagoko bidalketetan ere bai."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Egilekideak helbide elektronikoaren bidez soilik identifikatzen dira, inoiz ez izenaren bidez. Lehendik dauden kontuak ez dira inoiz aldatzen, ezta berriro aktibatzen ere. tools/backfill.php komando-lerroko tresnak plugina gaitu aurretik osatutako bidalketak prozesatzen ditu."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Bidalketaren baieztapena"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Plugina gaitzean, bidalketa bat osatzean bidaltzen den baieztapena «Bidali mezu elektroniko bat egile guztiei» aukeratik «Bidali mezu elektroniko bat egile-bidaltzaileari bakarrik» aukerara aldatu zen, egilekide bakoitzak pluginaren mezua soilik jaso dezan. Aurreko balioa berrezartzen da plugina desgaitzean, bitartean eskuz aldatu ez bada behintzat."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Aldizkaria bidalketaren baieztapena egile guztiei bidaltzeko konfiguratuta dago. Egilekideek mezu hori eta pluginaren mezua jasoko dituzte. Bakarra jaso dezaten, ezarri «Bidali mezu elektroniko bat egile-bidaltzaileari bakarrik» aukera Lan-fluxua > Mezu elektronikoak atalean, edo desgaitu eta gaitu berriro plugin hau."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Bidalketaren baieztapena ez zaie egile guztiei bidaltzen; beraz, egilekideek pluginaren mezua soilik jasotzen dute."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Lotura"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Lotu egilekideak automatikoki bidalketa bat osatzen denean, edo lan-fluxuan dagoen bidalketa bati kolaboratzaile bat gehitzen zaionean"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Sortu kontu bat erabiltzaile batek ere egilekidearen helbide elektronikoa ez duenean (desaktibatuta badago, egilekidea zain gisa erregistratzen da)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Lotutako egilekideen egile-taldea"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Egilekide guztiak talde honekin lotzen dira, kolaboratzailearen formularioan haientzat aukeratutako taldea edozein dela ere. Lan-fluxurako sarbidea duten egile-taldeak soilik agertzen dira."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Aldizkariaren «Egilea» taldea"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Aukeratu aldizkari honetako egile-talde bat."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Mezu elektronikoa"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Bidali mezu elektroniko bat egilekideari lotzen denean"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Mezu elektronikoa entregatzeko saiakerak"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Saiakera kopuruak 1 eta 10 arteko zenbaki osoa izan behar du."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Pasahitz-estekaren baliozkotasun-egunak"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Pluginak sortutako kontuetarako. Esteka pasahitza ezarri bezain laster uzten dio funtzionatzeari."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Egun kopuruak 1 eta 30 arteko zenbaki osoa izan behar du."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Erregistroa"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Idatzi lotura-ekintza bakoitza aplikazioaren errore-erregistroan (erroreak beti idazten dira)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Kontu bat sortu da zuretzat <strong>{$username}</strong> erabiltzaile-izenarekin. Zure pasahitza aukeratzeko, erabili esteka seguru hau, {$days} egunez baliozkoa: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Hasi saioa ohiko erabiltzaile-izenarekin (<strong>{$username}</strong>) eta pasahitzarekin. Pasahitza gogoratzen ez baduzu, hemen berrezar dezakezu: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

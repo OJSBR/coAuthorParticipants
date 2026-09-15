@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: id\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Penulis pendamping ditautkan sebagai partisipan naskah"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Dikirim kepada penulis pendamping ketika akunnya ditautkan ke naskah sebagai partisipan dengan peran penulis oleh plugin Penulis Pendamping sebagai Partisipan."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Cara mengakses akun: nama pengguna dan tautan untuk menetapkan kata sandi bagi akun baru, atau pengingat untuk menggunakan kredensial saat ini bagi akun yang sudah ada"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Tautan aman dan sementara untuk menetapkan kata sandi akun yang dibuat oleh plugin (kosong untuk akun yang sudah ada)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Anda sekarang menjadi partisipan naskah {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Kepada Yth. {$recipientName},</p><p>Anda tercantum sebagai penulis pendamping pada naskah \"{$submissionTitle}\" yang diterima oleh {$contextName}.</p><p>Akun Anda telah ditautkan ke naskah tersebut sebagai partisipan. Mulai sekarang Anda dapat mengikuti perkembangan editorialnya dan mengakses informasi yang disediakan bagi para penulis.</p><p>ID naskah: {$submissionId}<br />Nama pengguna: {$recipientUsername}<br />Akses: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Jika ada pertanyaan, silakan hubungi kami melalui {$contactEmail}.</p>{$contextSignature}"

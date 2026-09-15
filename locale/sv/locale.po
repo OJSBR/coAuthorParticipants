@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: sv\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Medförfattare som deltagare"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Gör de medförfattare som anges bland ett bidrags medarbetare till användare som deltar i bidragets redaktionella arbetsflöde med författarrollen: hittar eller skapar varje konto, lägger till författarrollen i tidskriften, knyter personen till bidraget och skickar ett individuellt e-postmeddelande. Fungerar för nya bidrag och, via kommandoraden, för tidigare bidrag som fortfarande finns i arbetsflödet."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Medförfattare matchas enbart på e-postadress, aldrig på namn. Befintliga konton ändras eller återaktiveras aldrig. Kommandoradsverktyget tools/backfill.php bearbetar bidrag som slutfördes innan pluginet aktiverades."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Bekräftelse av bidrag"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "När pluginet aktiverades ändrades bekräftelsen som skickas när ett bidrag slutförs från ”alla författare” till ”endast den inskickande författaren”, så att varje medförfattare bara får pluginets e-postmeddelande. Det tidigare värdet återställs när pluginet avaktiveras, om det inte har ändrats manuellt under tiden."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Tidskriften är inställd på att skicka bekräftelsen av bidrag till alla författare. Medförfattare får då både det e-postmeddelandet och pluginets. För att de bara ska få ett, ställ in bekräftelsen på den inskickande författaren under Arbetsflöde > E-post, eller avaktivera och aktivera detta plugin igen."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Bekräftelsen av bidrag skickas inte till alla författare, så medförfattare får bara pluginets e-postmeddelande."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Koppling"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Koppla medförfattare automatiskt när ett bidrag slutförs, eller när en medarbetare läggs till i ett bidrag som redan finns i arbetsflödet"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Skapa ett konto när ingen användare har medförfattarens e-postadress (om avstängt registreras medförfattaren som väntande)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Författargrupp för kopplade medförfattare"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Alla medförfattare kopplas till den här gruppen, oavsett vilken grupp som valdes för dem i medarbetarformuläret. Endast författargrupper med åtkomst till arbetsflödet visas."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Tidskriftens grupp Författare"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Välj en författargrupp i den här tidskriften."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "E-post"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Skicka ett e-postmeddelande till medförfattaren när hen kopplas"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Leveransförsök för e-post"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Antalet försök måste vara ett heltal från 1 till 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Antal dagar som lösenordslänken är giltig"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "För konton som skapats av pluginet. Länken slutar fungera så snart lösenordet har angetts."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Antalet dagar måste vara ett heltal från 1 till 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Logg"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Skriv varje kopplingsåtgärd till applikationens fellogg (fel skrivs alltid)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Ett konto har skapats åt dig med användarnamnet <strong>{$username}</strong>. Använd denna säkra länk, som är giltig i {$days} dagar, för att välja ditt lösenord: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Logga in med ditt vanliga användarnamn (<strong>{$username}</strong>) och lösenord. Om du inte kommer ihåg ditt lösenord kan du återställa det här: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

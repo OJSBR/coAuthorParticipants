@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: cs\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Spoluautoři jako účastníci"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Mění spoluautory uvedené mezi přispěvateli příspěvku na uživatele, kteří se s rolí autora účastní jeho redakčního pracovního postupu: vyhledá nebo vytvoří každý účet, přidá roli autora v časopise, přiřadí uživatele k příspěvku a odešle individuální e-mail. Funguje u nových příspěvků a z příkazového řádku také u dřívějších příspěvků, které jsou stále v pracovním postupu."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Spoluautoři se párují pouze podle e-mailové adresy, nikdy podle jména. Existující účty se nikdy nemění ani znovu neaktivují. Nástroj příkazového řádku tools/backfill.php zpracuje příspěvky dokončené před povolením pluginu."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Potvrzení příspěvku"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Při povolení pluginu bylo potvrzení odesílané po dokončení příspěvku změněno z „Odeslání e-mailu všem autorům“ na „E-mail zašlete pouze autorovi, který práci předkládá“, aby každý spoluautor obdržel pouze e-mail pluginu. Předchozí hodnota se obnoví při zakázání pluginu, pokud nebyla mezitím ručně změněna."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Časopis je nastaven tak, aby potvrzení příspěvku odesílal všem autorům. Spoluautoři obdrží tento e-mail i e-mail pluginu. Aby obdrželi pouze jeden, nastavte potvrzení v části Pracovní postup > Emaily na „E-mail zašlete pouze autorovi, který práci předkládá“, nebo tento plugin zakažte a znovu povolte."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Potvrzení příspěvku se neodesílá všem autorům, takže spoluautoři obdrží pouze e-mail pluginu."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Propojení"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Automaticky propojit spoluautory při dokončení příspěvku nebo při přidání přispěvatele k příspěvku, který je již v pracovním postupu"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Vytvořit účet, pokud žádný uživatel nemá e-mailovou adresu spoluautora (pokud je vypnuto, spoluautor se zaznamená jako čekající)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Autorská skupina pro propojené spoluautory"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Každý spoluautor je propojen s touto skupinou bez ohledu na to, jaká skupina mu byla zvolena ve formuláři přispěvatele. Zobrazují se pouze autorské skupiny s přístupem k pracovnímu postupu."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Skupina „Autor“ časopisu"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Zvolte autorskou skupinu tohoto časopisu."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "E-mail"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Odeslat spoluautorovi e-mail, když je propojen"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Počet pokusů o doručení e-mailu"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Počet pokusů musí být celé číslo od 1 do 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Počet dní platnosti odkazu pro nastavení hesla"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Pro účty vytvořené pluginem. Odkaz přestane fungovat, jakmile je heslo nastaveno."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Počet dní musí být celé číslo od 1 do 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Protokol"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Zapisovat každou akci propojení do chybového protokolu aplikace (chyby se zapisují vždy)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Byl pro Vás vytvořen účet s uživatelským jménem <strong>{$username}</strong>. Heslo si zvolíte pomocí tohoto zabezpečeného odkazu, platného po dobu {$days} dní: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Přihlaste se svým obvyklým uživatelským jménem (<strong>{$username}</strong>) a heslem. Pokud si heslo nepamatujete, můžete si ho obnovit zde: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

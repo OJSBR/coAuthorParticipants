@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: zh_Hans\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "合著者已作为稿件参与者关联"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "当合著者参与者插件将合著者的账户以作者角色参与者的身份关联到稿件时，发送给该合著者。"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "账户访问方式：新账户为用户名及设置密码的链接，现有账户为使用当前登录凭据的提醒"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "用于为插件创建的账户设置密码的安全临时链接（现有账户为空）"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "您现已成为稿件 {$submissionId} 的参与者"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>尊敬的 {$recipientName}：</p><p>您已被列为《{$contextName}》所收到稿件“{$submissionTitle}”的合著者。</p><p>您的账户已作为参与者关联到该稿件。今后，您可以跟踪稿件的编辑进度，并查阅向作者提供的信息。</p><p>稿件编号：{$submissionId}<br />用户名：{$recipientUsername}<br />访问地址：<a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>如有任何疑问，请通过 {$contactEmail} 与我们联系。</p>{$contextSignature}"

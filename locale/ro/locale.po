@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ro\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Coautori participanți"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Transformă coautorii menționați în lista de contributori a unui manuscris în utilizatori care participă la fluxul editorial al acestuia, cu rolul de autor: găsește sau creează fiecare cont, adaugă rolul de autor în revistă, atribuie contul manuscrisului și trimite un email individual. Funcționează pentru manuscrisele noi și, din linia de comandă, pentru manuscrisele anterioare aflate încă în fluxul de lucru."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Coautorii sunt identificați doar după adresa de email, niciodată după nume. Conturile existente nu sunt niciodată modificate sau reactivate. Instrumentul de linie de comandă tools/backfill.php procesează manuscrisele finalizate înainte de activarea pluginului."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Confirmarea înregistrării manuscrisului"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "La activarea pluginului, confirmarea trimisă la finalizarea unui manuscris a fost schimbată din „Trimiteți un email tuturor autorilor” în „Trimiteți un email doar autorului care a înregistrat manuscrisul”, astfel încât fiecare coautor să primească doar emailul pluginului. Valoarea anterioară este restabilită la dezactivarea pluginului, cu excepția cazului în care a fost modificată manual între timp."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Revista este configurată să trimită confirmarea înregistrării manuscrisului tuturor autorilor. Coautorii vor primi atât acel email, cât și emailul pluginului. Pentru ca aceștia să primească doar unul, setați confirmarea la „Trimiteți un email doar autorului care a înregistrat manuscrisul” în Flux de lucru > Emailuri sau dezactivați și activați din nou acest plugin."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Confirmarea înregistrării manuscrisului nu este trimisă tuturor autorilor, așa că coautorii primesc doar emailul pluginului."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Asociere"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Asociază automat coautorii atunci când un manuscris este finalizat sau când un contributor este adăugat la un manuscris aflat deja în fluxul de lucru"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Creează un cont atunci când niciun utilizator nu are adresa de email a coautorului (dacă opțiunea este dezactivată, coautorul este înregistrat ca fiind în așteptare)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Grup de autori pentru coautorii asociați"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Toți coautorii sunt asociați cu acest grup, indiferent de grupul ales pentru ei în formularul contributorului. Sunt afișate doar grupurile de autori cu acces la fluxul de lucru."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Grupul „Autor” al revistei"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Alegeți un grup de autori al acestei reviste."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Email"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Trimite coautorului un email atunci când este asociat"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Încercări de trimitere a emailului"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Numărul de încercări trebuie să fie un număr întreg între 1 și 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Zile de valabilitate a linkului pentru parolă"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Pentru conturile create de plugin. Linkul nu mai funcționează imediat ce parola este setată."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Numărul de zile trebuie să fie un număr întreg între 1 și 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Jurnalizare"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Scrie fiecare acțiune de asociere în jurnalul de erori al aplicației (erorile sunt scrise întotdeauna)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>A fost creat un cont pentru dumneavoastră cu numele de utilizator <strong>{$username}</strong>. Pentru a vă alege parola, folosiți acest link securizat, valabil {$days} zile: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Autentificați-vă cu numele de utilizator (<strong>{$username}</strong>) și parola obișnuite. Dacă nu vă amintiți parola, o puteți reseta aici: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

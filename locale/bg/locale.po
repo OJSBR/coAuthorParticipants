@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: bg\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Съавтори като участници"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Превръща съавторите, посочени в списъка на авторите и участниците в изпратен материал, в потребители, участващи в неговия редакционен работен процес с ролята на автор: намира или създава акаунта на всеки от тях, добавя ролята на автор в списанието, асоциира го към изпратения материал и изпраща индивидуален имейл. Работи при нови изпратени материали, а чрез командния ред – и при по-ранни изпратени материали, които все още са в работния процес."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Съавторите се разпознават само по имейл адрес, никога по име. Съществуващите акаунти никога не се променят и не се активират повторно. Инструментът за команден ред tools/backfill.php обработва изпратените материали, завършени преди активирането на плъгина."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Потвърждение за получени материали"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "При активирането на плъгина потвърждението, изпращано при завършване на подаването на материали, беше променено от „всички автори“ на „подаващия материалите автор“, така че всеки съавтор да получава само имейла на плъгина. Предишната стойност се възстановява при деактивиране на плъгина, освен ако междувременно не е била променена ръчно."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Списанието е настроено да изпраща потвърждението за получени материали до всички автори. Съавторите ще получат този имейл и имейла на плъгина. За да получават само един, настройте потвърждението да се изпраща само до подаващия материалите автор в Работна процедура > Имейли или деактивирайте и активирайте отново този плъгин."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Потвърждението за получени материали не се изпраща до всички автори, така че съавторите получават само имейла на плъгина."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Свързване"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Автоматично свързване на съавторите при завършване на подаването на материали или при добавяне на автор/участник към изпратен материал, който вече е в работния процес"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Създаване на акаунт, когато никой потребител няма имейл адреса на съавтора (при изключена опция съавторът се записва като чакащ)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Група автори за свързаните съавтори"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Всеки съавтор се свързва с тази група, независимо коя група е избрана за него във формуляра за автор/участник. Показват се само групи автори с достъп до работния процес."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Групата „Автор“ на списанието"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Изберете група автори на това списание."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Имейл"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Изпращане на имейл до съавтора, когато бъде свързан"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Опити за изпращане на имейл"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Броят опити трябва да бъде цяло число от 1 до 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Дни на валидност на връзката за парола"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "За акаунти, създадени от плъгина. Връзката престава да работи веднага след задаване на паролата."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Броят дни трябва да бъде цяло число от 1 до 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Дневник"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Записване на всяко действие по свързване в дневника за грешки на приложението (грешките се записват винаги)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>За вас е създаден акаунт с потребителско име <strong>{$username}</strong>. За да изберете паролата си, моля, използвайте тази защитена връзка, валидна {$days} дни: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Влезте с обичайното си потребителско име (<strong>{$username}</strong>) и парола. Ако не помните паролата си, можете да я нулирате тук: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

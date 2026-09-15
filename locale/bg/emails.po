@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: bg\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Съавтор, свързан като участник в изпратен материал"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Изпраща се до съавтор, когато плъгинът „Съавтори като участници“ свърже акаунта му с изпратен материал като участник с ролята на автор."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Как се осъществява достъп до акаунта: потребителското име и връзка за задаване на парола при нов акаунт или напомняне за използване на текущите данни за вход при съществуващ акаунт"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Защитена временна връзка за задаване на паролата на акаунт, създаден от плъгина (празна при съществуващи акаунти)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Вече сте участник в изпратения материал {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Уважаеми/а {$recipientName},</p><p>Посочени сте като съавтор на изпратения материал „{$submissionTitle}“, получен от {$contextName}.</p><p>Вашият акаунт е свързан с изпратения материал като участник. Отсега нататък можете да следите редакционния му напредък и да имате достъп до информацията, предоставена на авторите.</p><p>Идентификатор на изпратения материал: {$submissionId}<br />Потребителско име: {$recipientUsername}<br />Достъп: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Ако имате въпроси, моля, свържете се с нас на {$contactEmail}.</p>{$contextSignature}"

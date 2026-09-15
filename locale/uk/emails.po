@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: uk\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Співавтора прив'язано до подання як учасника"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Надсилається співавтору, коли плагін «Співавтори-учасники» прив'язує його обліковий запис до подання як учасника з роллю автора."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Як отримати доступ до облікового запису: ім'я користувача та посилання для встановлення пароля для нового облікового запису або нагадування використовувати поточні облікові дані для наявного"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Захищене тимчасове посилання для встановлення пароля облікового запису, створеного плагіном (порожнє для наявних облікових записів)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Тепер Ви учасник подання {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Шановний(на) {$recipientName}!</p><p>Вас зазначено як співавтора подання «{$submissionTitle}», що надійшло до журналу «{$contextName}».</p><p>Ваш обліковий запис прив'язано до подання як учасника. Відтепер Ви можете стежити за ходом його редакційного опрацювання та отримувати доступ до інформації, наданої авторам.</p><p>ID подання: {$submissionId}<br />Ім'я користувача: {$recipientUsername}<br />Доступ: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Якщо у Вас виникнуть запитання, будь ласка, зв'яжіться з нами за адресою {$contactEmail}.</p>{$contextSignature}"

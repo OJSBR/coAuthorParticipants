@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ar\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "ربط مؤلف مشارك كمشارك في طلب التقديم"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "تُرسل إلى المؤلف المشارك عندما يربط البرنامج الإضافي «المؤلفون المشاركون كمشاركين» حسابه بطلب تقديم كمشارك بدور المؤلف."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "كيفية الوصول إلى الحساب: اسم الدخول ورابط لتعيين كلمة المرور في حالة الحساب الجديد، أو تذكير باستخدام بيانات الدخول الحالية في حالة الحساب الموجود"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "رابط آمن ومؤقت لتعيين كلمة مرور حساب أنشأه البرنامج الإضافي (فارغ للحسابات الموجودة)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "أصبحت الآن مشاركًا في طلب التقديم {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>عزيزي {$recipientName}،</p><p>لقد أُدرج اسمك كمؤلف مشارك في طلب التقديم «{$submissionTitle}» الذي تلقته {$contextName}.</p><p>تم ربط حسابك بطلب التقديم كمشارك. من الآن فصاعدًا، يمكنك متابعة سير تقدمه في مراحل التحرير والوصول إلى المعلومات المتاحة للمؤلفين.</p><p>معرّف طلب التقديم: {$submissionId}<br />اسم الدخول: {$recipientUsername}<br />الوصول: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>إذا كانت لديك أي استفسارات، يرجى التواصل معنا عبر {$contactEmail}.</p>{$contextSignature}"

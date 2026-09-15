@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ja\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "投稿の参加者として紐付けられた共著者"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "共著者参加者プラグインにより、共著者のアカウントが著者ロールの参加者として投稿に紐付けられたときに、その共著者に送信されます。"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "アカウントへのアクセス方法: 新しいアカウントの場合はユーザー名とパスワード設定用リンク、既存のアカウントの場合は現在の認証情報を使用する旨の案内"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "プラグインが作成したアカウントのパスワードを設定するための安全な一時リンク（既存のアカウントの場合は空）"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "投稿 {$submissionId} の参加者になりました"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>{$recipientName} 様</p><p>貴方は、『{$contextName}』が受け付けた投稿「{$submissionTitle}」の共著者として登録されています。</p><p>貴方のアカウントは、参加者としてこの投稿に紐付けられました。今後は、編集の進捗状況をご確認いただけるほか、著者に公開されている情報にアクセスしていただけます。</p><p>投稿ID: {$submissionId}<br />ユーザー名: {$recipientUsername}<br />アクセス: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>ご不明な点がございましたら、{$contactEmail} までお問い合わせください。</p>{$contextSignature}"

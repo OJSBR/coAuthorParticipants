@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<!--
+  * plugins/generic/coAuthorParticipants/version.xml
+  *
+  * Copyright (c) 2026 OJSBR (https://ojsbr.com)
+  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+  *
+  * Turns the co-authors listed in a submission's contributors into users taking
+  * part in the editorial workflow of that submission, with the author role.
+  *
+  * Plugin version information.
+  -->
+<version>
+	<application>coAuthorParticipants</application>
+	<type>plugins.generic</type>
+	<release>1.0.0.0</release>
+	<date>2026-09-14</date>
+	<lazy-load>1</lazy-load>
+	<class>CoAuthorParticipantsPlugin</class>
+</version>

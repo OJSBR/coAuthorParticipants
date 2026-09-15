@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: az\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Həmmüəllif təqdimatın iştirakçısı kimi əlaqələndirildi"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "İştirakçı həmmüəlliflər əlavəsi həmmüəllifin hesabını müəllif rolu ilə iştirakçı kimi təqdimata əlaqələndirdikdə ona göndərilir."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Hesaba necə daxil olmaq: yeni hesab üçün istifadəçi adı və şifrə təyin etmək üçün link, mövcud hesab üçün isə cari giriş məlumatlarından istifadə etmək barədə xatırlatma"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Əlavənin yaratdığı hesabın şifrəsini təyin etmək üçün təhlükəsiz, müvəqqəti link (mövcud hesablar üçün boş)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Siz artıq {$submissionId} nömrəli təqdimatın iştirakçısısınız"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Hörmətli {$recipientName},</p><p>Siz {$contextName} tərəfindən qəbul edilmiş \"{$submissionTitle}\" təqdimatının həmmüəllifi kimi göstərilmisiniz.</p><p>Hesabınız təqdimata iştirakçı kimi əlaqələndirilib. Bundan sonra siz onun redaksiya prosesini izləyə və müəlliflərə təqdim olunan məlumatlara daxil ola bilərsiniz.</p><p>Təqdimatın ID-si: {$submissionId}<br />İstifadəçi adı: {$recipientUsername}<br />Giriş: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Hər hansı sualınız olarsa, lütfən {$contactEmail} ünvanı ilə bizimlə əlaqə saxlayın.</p>{$contextSignature}"

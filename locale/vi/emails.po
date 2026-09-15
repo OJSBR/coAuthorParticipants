@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: vi\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Đồng tác giả được liên kết làm người tham gia bài nộp"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Được plugin Đồng tác giả tham gia gửi cho đồng tác giả khi tài khoản của họ được liên kết với một bài nộp với tư cách người tham gia có vai trò tác giả."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Cách truy cập tài khoản: tên người dùng và liên kết đặt mật khẩu đối với tài khoản mới, hoặc lời nhắc sử dụng thông tin đăng nhập hiện tại đối với tài khoản đã có"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Liên kết bảo mật, tạm thời để đặt mật khẩu cho tài khoản do plugin tạo (để trống đối với tài khoản đã có)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Quý vị hiện là người tham gia bài nộp {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Kính gửi {$recipientName},</p><p>Quý vị đã được ghi tên là đồng tác giả của bài nộp \"{$submissionTitle}\" mà {$contextName} đã nhận.</p><p>Tài khoản của Quý vị đã được liên kết với bài nộp với tư cách người tham gia. Từ nay, Quý vị có thể theo dõi tiến trình biên tập của bài nộp và truy cập các thông tin dành cho tác giả.</p><p>Mã bài nộp: {$submissionId}<br />Tên người dùng: {$recipientUsername}<br />Truy cập: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Nếu có bất kỳ câu hỏi nào, xin vui lòng liên hệ với chúng tôi qua {$contactEmail}.</p>{$contextSignature}"

@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: el\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Συν-συγγραφείς ως Συμμετέχοντες"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Μετατρέπει τους συν-συγγραφείς που αναφέρονται στους συντελεστές μιας υποβολής σε χρήστες που συμμετέχουν στην εκδοτική ροή εργασιών της, με τον ρόλο του συγγραφέα: εντοπίζει ή δημιουργεί κάθε λογαριασμό, προσθέτει τον ρόλο του συγγραφέα στο περιοδικό, τον αναθέτει στην υποβολή και αποστέλλει ατομικό email. Λειτουργεί στις νέες υποβολές και, μέσω της γραμμής εντολών, στις παλαιότερες υποβολές που βρίσκονται ακόμη στη ροή εργασιών."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Οι συν-συγγραφείς αντιστοιχίζονται μόνο με βάση τη διεύθυνση email, ποτέ με βάση το όνομα. Οι υπάρχοντες λογαριασμοί δεν τροποποιούνται ούτε επανενεργοποιούνται ποτέ. Το εργαλείο γραμμής εντολών tools/backfill.php επεξεργάζεται τις υποβολές που ολοκληρώθηκαν πριν από την ενεργοποίηση του πρόσθετου."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Επιβεβαίωση υποβολής"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Κατά την ενεργοποίηση του πρόσθετου, η επιβεβαίωση που αποστέλλεται όταν ολοκληρώνεται μια υποβολή άλλαξε από «όλους τους συγγραφείς» σε «τον συγγραφέα που υπέβαλε», ώστε κάθε συν-συγγραφέας να λαμβάνει μόνο το email του πρόσθετου. Η προηγούμενη τιμή αποκαθίσταται όταν απενεργοποιηθεί το πρόσθετο, εκτός αν έχει αλλάξει χειροκίνητα στο μεταξύ."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Το περιοδικό είναι ρυθμισμένο να αποστέλλει την επιβεβαίωση υποβολής σε όλους τους συγγραφείς. Οι συν-συγγραφείς θα λάβουν αυτό το email και το email του πρόσθετου. Για να λαμβάνουν μόνο ένα, ορίστε την αποστολή της επιβεβαίωσης στον συγγραφέα που υπέβαλε στη Ροή εργασιών > Emails ή απενεργοποιήστε και ενεργοποιήστε ξανά αυτό το πρόσθετο."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Η επιβεβαίωση υποβολής δεν αποστέλλεται σε όλους τους συγγραφείς, επομένως οι συν-συγγραφείς λαμβάνουν μόνο το email του πρόσθετου."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Σύνδεση"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Αυτόματη σύνδεση των συν-συγγραφέων όταν ολοκληρώνεται μια υποβολή ή όταν προστίθεται συντελεστής σε υποβολή που βρίσκεται ήδη στη ροή εργασιών"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Δημιουργία λογαριασμού όταν κανένας χρήστης δεν έχει τη διεύθυνση email του συν-συγγραφέα (όταν είναι απενεργοποιημένο, ο συν-συγγραφέας καταγράφεται ως εκκρεμής)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Ομάδα συγγραφέων για τους συνδεδεμένους συν-συγγραφείς"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Κάθε συν-συγγραφέας συνδέεται με αυτή την ομάδα, ανεξάρτητα από την ομάδα που επιλέχθηκε για αυτόν στη φόρμα του συντελεστή. Εμφανίζονται μόνο ομάδες συγγραφέων με πρόσβαση στη ροή εργασιών."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Η ομάδα «Συγγραφέας» του περιοδικού"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Επιλέξτε μια ομάδα συγγραφέων αυτού του περιοδικού."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Email"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Αποστολή email στον συν-συγγραφέα όταν συνδέεται"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Προσπάθειες αποστολής email"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Ο αριθμός προσπαθειών πρέπει να είναι ακέραιος από 1 έως 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Ημέρες ισχύος του συνδέσμου κωδικού πρόσβασης"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Για λογαριασμούς που δημιουργούνται από το πρόσθετο. Ο σύνδεσμος παύει να λειτουργεί μόλις οριστεί ο κωδικός πρόσβασης."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Ο αριθμός ημερών πρέπει να είναι ακέραιος από 1 έως 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Αρχείο καταγραφής"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Καταγραφή κάθε ενέργειας σύνδεσης στο αρχείο καταγραφής σφαλμάτων της εφαρμογής (τα σφάλματα καταγράφονται πάντα)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Δημιουργήθηκε λογαριασμός για εσάς με όνομα χρήστη <strong>{$username}</strong>. Για να επιλέξετε τον κωδικό πρόσβασής σας, χρησιμοποιήστε αυτόν τον ασφαλή σύνδεσμο, που ισχύει για {$days} ημέρες: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Συνδεθείτε με το συνηθισμένο όνομα χρήστη σας (<strong>{$username}</strong>) και τον κωδικό πρόσβασής σας. Αν δεν θυμάστε τον κωδικό πρόσβασής σας, μπορείτε να τον αλλάξετε εδώ: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

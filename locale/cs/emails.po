@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: cs\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Spoluautor propojen jako účastník příspěvku"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Odesílá se spoluautorovi, když plugin Spoluautoři jako účastníci propojí jeho účet s příspěvkem jako účastníka s rolí autora."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Jak získat přístup k účtu: uživatelské jméno a odkaz pro nastavení hesla u nového účtu, nebo připomenutí použít stávající přihlašovací údaje u existujícího účtu"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Zabezpečený dočasný odkaz pro nastavení hesla účtu vytvořeného pluginem (u existujících účtů prázdný)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Nyní jste účastníkem příspěvku {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Vážený/á {$recipientName},</p><p>byl/a jste uveden/a jako spoluautor/ka příspěvku „{$submissionTitle}“, který obdržel časopis {$contextName}.</p><p>Váš účet byl s příspěvkem propojen jako účastník. Od této chvíle můžete sledovat jeho redakční průběh a mít přístup k informacím zpřístupněným autorům.</p><p>ID příspěvku: {$submissionId}<br />Uživatelské jméno: {$recipientUsername}<br />Přístup: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>V případě jakýchkoli dotazů nás prosím kontaktujte na adrese {$contactEmail}.</p>{$contextSignature}"

@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: pt\n"
+
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Coautores Participantes"
+
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Transforma os coautores indicados nos contribuidores de uma submissão em utilizadores que participam no respetivo fluxo de trabalho editorial, com o papel de autor: localiza ou cria cada conta, acrescenta o papel de autor na revista, atribui a pessoa à submissão e envia um email individual. Atua nas novas submissões e, através da linha de comandos, nas submissões anteriores que ainda se encontram no fluxo de trabalho."
+
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Os coautores são identificados apenas pelo endereço de email, nunca pelo nome. As contas existentes nunca são alteradas nem reativadas. A ferramenta de linha de comandos tools/backfill.php processa as submissões concluídas antes da ativação do plugin."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Confirmação da submissão"
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Ao ativar o plugin, a confirmação enviada quando uma submissão é concluída passou de «todos os autores» para «apenas o autor da submissão», para que cada coautor receba somente o email do plugin. O valor anterior é reposto quando o plugin for desativado, a menos que tenha sido alterado manualmente entretanto."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "A revista está configurada para enviar a confirmação da submissão a todos os autores. Os coautores receberão esse email e também o do plugin. Para que recebam apenas um, configure a confirmação para ser enviada apenas ao autor da submissão em Fluxo de trabalho > E-mails, ou desative e volte a ativar este plugin."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "A confirmação da submissão não é enviada a todos os autores, pelo que os coautores recebem apenas o email do plugin."
+
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Associação"
+
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Associar automaticamente os coautores quando uma submissão é concluída, ou quando é adicionado um contribuidor a uma submissão que já se encontra no fluxo de trabalho"
+
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Criar uma conta quando nenhum utilizador tiver o endereço de email do coautor (se desativado, o coautor fica registado como pendente)"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Grupo de autor dos coautores associados"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Todos os coautores são associados a este grupo, qualquer que seja o grupo escolhido para eles no formulário do contribuidor. Só são apresentados os grupos de autor com acesso ao fluxo de trabalho."
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "O grupo Autor da revista"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Escolha um grupo de autor desta revista."
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Email"
+
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Enviar um email ao coautor quando for associado"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Tentativas de envio do email"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "O número de tentativas deve ser um número inteiro de 1 a 10."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Dias de validade da ligação para a senha"
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Para contas criadas pelo plugin. A ligação deixa de funcionar assim que a senha é definida."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "O número de dias deve ser um número inteiro de 1 a 30."
+
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Registo"
+
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Registar cada ação de associação no registo de erros da aplicação (os erros são sempre registados)"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Foi criada uma conta com o nome de utilizador <strong>{$username}</strong>. Para definir a sua senha, utilize esta ligação segura, válida durante {$days} dias: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Inicie sessão com o seu nome de utilizador habitual (<strong>{$username}</strong>) e a sua senha. Caso não se recorde da senha, pode redefini-la aqui: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

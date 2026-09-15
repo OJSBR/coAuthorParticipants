@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: nb_NO\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Medforfattere som deltakere"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Gjør medforfatterne som er oppført blant bidragsyterne i en innlevering, til brukere som deltar i innleveringens redaksjonelle arbeidsflyt med forfatterrollen: finner eller oppretter hver konto, legger til forfatterrollen i tidsskriftet, tildeler personen innleveringen og sender en individuell e-post. Virker på nye innleveringer og, via kommandolinjen, på tidligere innleveringer som fortsatt er i arbeidsflyten."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Medforfattere identifiseres kun ved e-postadresse, aldri ved navn. Eksisterende kontoer blir aldri endret eller reaktivert. Kommandolinjeverktøyet tools/backfill.php behandler innleveringer som ble fullført før programtillegget ble slått på."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Bekreftelse på innlevering"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Da programtillegget ble slått på, ble bekreftelsen som sendes når en innlevering fullføres, endret fra «alle forfattere» til «kun forfatteren som var ansvarlig for innleveringen», slik at hver medforfatter bare mottar e-posten fra programtillegget. Den forrige verdien gjenopprettes når programtillegget slås av, med mindre den er endret manuelt i mellomtiden."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Tidsskriftet er satt opp til å sende bekreftelsen på innlevering til alle forfattere. Medforfattere vil motta både den e-posten og e-posten fra programtillegget. For at de bare skal få én, still inn bekreftelsen til forfatteren som var ansvarlig for innleveringen under Arbeidsflyt > E-poster, eller slå dette programtillegget av og på igjen."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Bekreftelsen på innlevering sendes ikke til alle forfattere, så medforfattere mottar bare e-posten fra programtillegget."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Kobling"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Koble medforfattere automatisk når en innlevering fullføres, eller når en bidragsyter legges til i en innlevering som allerede er i arbeidsflyten"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Opprett en konto når ingen bruker har medforfatterens e-postadresse (når dette er slått av, registreres medforfatteren som ventende)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Forfattergruppe for tilkoblede medforfattere"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Alle medforfattere kobles til denne gruppen, uansett hvilken gruppe som ble valgt for dem i bidragsyterskjemaet. Bare forfattergrupper med tilgang til arbeidsflyten vises."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Tidsskriftets Forfatter-gruppe"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Velg en forfattergruppe i dette tidsskriftet."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "E-post"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Send medforfatteren en e-post når vedkommende kobles"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Leveringsforsøk for e-post"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Antall forsøk må være et heltall fra 1 til 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Antall dager passordlenken er gyldig"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "For kontoer opprettet av programtillegget. Lenken slutter å virke så snart passordet er valgt."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Antall dager må være et heltall fra 1 til 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Logg"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Skriv hver koblingshandling til applikasjonens feillogg (feil skrives alltid)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Det er opprettet en konto for deg med brukernavnet <strong>{$username}</strong>. Bruk denne sikre lenken, som er gyldig i {$days} dager, for å velge passord: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Logg inn med ditt vanlige brukernavn (<strong>{$username}</strong>) og passord. Hvis du ikke husker passordet, kan du tilbakestille det her: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

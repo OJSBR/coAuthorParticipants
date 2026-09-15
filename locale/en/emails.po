@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: en\n"
+
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Co-author linked as a submission participant"
+
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Sent to a co-author when their account is linked to a submission as a participant with the author role, by the Coauthor Participants plugin."
+
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "How to access the account: the username and a link to set the password for a new account, or a reminder to use the current credentials for an existing one"
+
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Secure, temporary link to set the password of an account created by the plugin (empty for existing accounts)"
+
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "You are now a participant of the submission {$submissionId}"
+
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Dear {$recipientName},</p><p>You were listed as a co-author of the submission \"{$submissionTitle}\", received by {$contextName}.</p><p>Your account has been linked to the submission as a participant. From now on you can follow its editorial progress and access the information made available to the authors.</p><p>Submission ID: {$submissionId}<br />Username: {$recipientUsername}<br />Access: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>If you have any questions, please contact us at {$contactEmail}.</p>{$contextSignature}"

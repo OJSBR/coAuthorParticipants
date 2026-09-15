@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: mk\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Коавтори како учесници"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Ги претвора коавторите наведени меѓу соработниците на поднесокот во корисници што учествуваат во неговиот уреднички работен тек, со улога автор: ја пронаоѓа или ја создава сметката на секој од нив, ја додава улогата автор во списанието, го доделува на поднесокот и испраќа индивидуален имејл. Работи на нови поднесоци и, преку командната линија, на претходни поднесоци што сè уште се во работниот тек."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Коавторите се препознаваат само според имејл адресата, никогаш според името. Постојните сметки никогаш не се менуваат ниту повторно се активираат. Алатката за командна линија tools/backfill.php ги обработува поднесоците завршени пред овозможувањето на плагинот."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Потврда за поднесок"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "При овозможувањето на плагинот, потврдата што се испраќа кога ќе заврши поднесувањето беше променета од „сите автори“ во „авторот што поднесува“, за секој коавтор да го добие само имејлот од плагинот. Претходната вредност се враќа кога плагинот ќе се оневозможи, освен ако во меѓувреме не била рачно променета."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Списанието е поставено да ја испраќа потврдата за поднесок до сите автори. Коавторите ќе го добијат тој имејл и имејлот од плагинот. За да добиваат само еден, поставете ја потврдата да се испраќа до авторот што поднесува во Работен тек > Имејли, или оневозможете го и повторно овозможете го овој плагин."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Потврдата за поднесок не се испраќа до сите автори, па коавторите го добиваат само имејлот од плагинот."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Поврзување"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Автоматски поврзувај ги коавторите кога ќе заврши поднесувањето или кога ќе се додаде соработник во поднесок што веќе е во работниот тек"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Создај сметка кога ниту еден корисник нема имејл адреса на коавторот (кога е исклучено, коавторот се евидентира како на чекање)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Група автори за поврзаните коавтори"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Секој коавтор се поврзува со оваа група, без оглед на групата избрана за него во формуларот за соработник. Се прикажуваат само групи автори со пристап до работниот тек."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Групата „Автор“ на списанието"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Изберете група автори на ова списание."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Имејл"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Испрати имејл до коавторот кога ќе биде поврзан"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Обиди за испраќање имејл"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Бројот на обиди мора да биде цел број од 1 до 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Денови на важење на врската за лозинка"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "За сметки создадени од плагинот. Врската престанува да работи штом ќе се постави лозинката."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Бројот на денови мора да биде цел број од 1 до 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Дневник"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Запишувај ја секоја акција на поврзување во дневникот на грешки на апликацијата (грешките секогаш се запишуваат)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>За вас е создадена сметка со корисничко име <strong>{$username}</strong>. За да ја изберете вашата лозинка, ве молиме користете ја оваа безбедна врска, која важи {$days} дена: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Најавете се со вашето вообичаено корисничко име (<strong>{$username}</strong>) и лозинка. Ако не се сеќавате на лозинката, можете да ја ресетирате тука: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: it\n"
+
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Coautore collegato come partecipante della proposta"
+
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Inviata a un coautore quando il suo account viene collegato a una proposta come partecipante con il ruolo di autore, dal plugin Coautori partecipanti."
+
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Come accedere all'account: il nome utente e un link per impostare la password, nel caso di un nuovo account, oppure un promemoria per usare le credenziali attuali, nel caso di un account esistente"
+
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Link sicuro e temporaneo per impostare la password di un account creato dal plugin (vuoto per gli account esistenti)"
+
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Lei è ora partecipante della proposta {$submissionId}"
+
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Gentile {$recipientName},</p><p>Lei risulta tra i coautori della proposta «{$submissionTitle}», ricevuta da {$contextName}.</p><p>Il Suo account è stato collegato alla proposta come partecipante. D'ora in poi potrà seguirne l'avanzamento editoriale e accedere alle informazioni messe a disposizione degli autori.</p><p>ID della proposta: {$submissionId}<br />Nome utente: {$recipientUsername}<br />Accesso: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Per qualsiasi domanda, La preghiamo di contattarci all'indirizzo {$contactEmail}.</p>{$contextSignature}"

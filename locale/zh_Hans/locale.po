@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: zh_Hans\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "合著者参与者"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "将稿件贡献者中列出的合著者转为以作者角色参与该稿件编辑工作流程的用户：查找或创建每个账户，在期刊中添加作者角色，将用户分配到稿件，并单独发送电子邮件。适用于新投稿，也可通过命令行处理仍在工作流程中的既往稿件。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "合著者仅按电子邮件地址匹配，从不按姓名匹配。现有账户绝不会被修改或重新激活。命令行工具 tools/backfill.php 用于处理在启用插件之前已完成提交的稿件。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "投稿确认"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "启用插件时，稿件提交完成后发送的确认邮件设置已从“向所有作者发送电子邮件”改为“仅向提交稿件的作者发送电子邮件”，以便每位合著者只收到插件发送的邮件。停用插件时将恢复原先的设置，除非在此期间已被手动更改。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "本期刊当前设置为向所有作者发送投稿确认。合著者将同时收到该邮件和插件发送的邮件。如需只发送一封，请在 工作流程 > 电子邮件 中将投稿确认设置为“仅向提交稿件的作者发送电子邮件”，或停用后重新启用本插件。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "投稿确认不会发送给所有作者，因此合著者只会收到插件发送的邮件。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "关联"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "在稿件提交完成时，或向已在工作流程中的稿件添加贡献者时，自动关联合著者"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "当没有用户使用该合著者的电子邮件地址时创建账户（关闭时，合著者将被记录为待处理）"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "已关联合著者的作者组"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "无论在贡献者表单中为其选择了哪个组，所有合著者都将以此组关联。仅列出可访问工作流程的作者组。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "期刊的“作者”组"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "请选择本期刊的一个作者组。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "电子邮件"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "合著者被关联时向其发送电子邮件"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "电子邮件发送尝试次数"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "尝试次数必须是 1 到 10 之间的整数。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "密码链接有效天数"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "适用于插件创建的账户。密码设置完成后，该链接即失效。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "天数必须是 1 到 30 之间的整数。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "日志"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "将每次关联操作写入应用程序错误日志（错误总是会被记录）"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>我们已为您创建账户，用户名为 <strong>{$username}</strong>。请使用以下安全链接设置您的密码，该链接 {$days} 天内有效：<a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>请使用您常用的用户名（<strong>{$username}</strong>）和密码登录。如果您忘记了密码，可以在此重置：<a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

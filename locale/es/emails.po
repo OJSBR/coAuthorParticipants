@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: es\n"
+
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Coautor/a vinculado como participante del envío"
+
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Se envía a un coautor/a cuando su cuenta se vincula a un envío como participante con el rol de autor/a, mediante el módulo Coautores participantes."
+
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Cómo acceder a la cuenta: el nombre de usuario/a y un enlace para establecer la contraseña, si la cuenta es nueva, o un recordatorio para usar las credenciales actuales, si la cuenta ya existe"
+
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Enlace seguro y temporal para establecer la contraseña de una cuenta creada por el módulo (vacío para las cuentas existentes)"
+
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Ahora es participante del envío {$submissionId}"
+
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Estimado/a {$recipientName},</p><p>Usted ha sido indicado/a como coautor/a del envío «{$submissionTitle}», recibido por {$contextName}.</p><p>Su cuenta se ha vinculado al envío como participante. A partir de ahora puede seguir su avance editorial y acceder a la información que se pone a disposición de los autores/as.</p><p>ID del envío: {$submissionId}<br />Nombre de usuario/a: {$recipientUsername}<br />Acceso: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Si tiene alguna pregunta, póngase en contacto con nosotros en {$contactEmail}.</p>{$contextSignature}"

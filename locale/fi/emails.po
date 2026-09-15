@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: fi\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Kanssakirjoittaja liitetty käsikirjoituksen osallistujaksi"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Lähetetään kanssakirjoittajalle, kun Kanssakirjoittajat osallistujina -lisäosa liittää hänen tilinsä käsikirjoitukseen osallistujaksi kirjoittajan roolissa."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Tilille pääsyn ohjeet: uuden tilin käyttäjätunnus ja linkki salasanan asettamiseen, tai olemassa olevan tilin kohdalla muistutus käyttää nykyisiä tunnuksia"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Suojattu, määräaikainen linkki lisäosan luoman tilin salasanan asettamiseen (tyhjä olemassa oleville tileille)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Olette nyt käsikirjoituksen {$submissionId} osallistuja"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Hyvä {$recipientName},</p><p>Teidät on merkitty kanssakirjoittajaksi käsikirjoitukseen ”{$submissionTitle}”, jonka {$contextName} on vastaanottanut.</p><p>Tilinne on liitetty käsikirjoitukseen osallistujaksi. Tästä lähtien voitte seurata sen etenemistä toimitusprosessissa ja nähdä kirjoittajien saatavilla olevat tiedot.</p><p>Käsikirjoituksen tunniste: {$submissionId}<br />Käyttäjätunnus: {$recipientUsername}<br />Pääsy: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Jos teillä on kysyttävää, ottakaa meihin yhteyttä osoitteeseen {$contactEmail}.</p>{$contextSignature}"

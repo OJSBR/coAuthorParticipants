@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: eu\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Bidalketaren parte-hartzaile gisa lotutako egilekidea"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Egilekide bati bidaltzen zaio, Egilekide parte-hartzaileak pluginak haren kontua bidalketa bati egile-rola duen parte-hartzaile gisa lotzen dionean."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Kontura sartzeko modua: kontu berrien kasuan, erabiltzaile-izena eta pasahitza ezartzeko esteka bat; lehendik dauden kontuen kasuan, egungo kredentzialak erabiltzeko gogorarazpena"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Pluginak sortutako kontu baten pasahitza ezartzeko esteka seguru eta aldi baterakoa (hutsik lehendik dauden kontuetan)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Orain {$submissionId} bidalketaren parte-hartzailea zara"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>{$recipientName} estimatua:</p><p>{$contextName} aldizkariak jasotako «{$submissionTitle}» bidalketaren egilekide gisa agertzen zara.</p><p>Zure kontua bidalketari lotu zaio parte-hartzaile gisa. Hemendik aurrera, bidalketaren bilakaera editoriala jarraitu ahal izango duzu, bai eta egileen eskura jarritako informazioa eskuratu ere.</p><p>Bidalketaren IDa: {$submissionId}<br />Erabiltzaile-izena: {$recipientUsername}<br />Sarbidea: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Zalantzarik baduzu, jarri gurekin harremanetan helbide honetan: {$contactEmail}.</p>{$contextSignature}"

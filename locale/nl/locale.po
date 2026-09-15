@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: nl\n"
+
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Medeauteurs als deelnemers"
+
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Maakt van de medeauteurs die bij de bijdragers van een inzending zijn opgegeven, gebruikers die met de rol van auteur deelnemen aan het redactieproces van die inzending: zoekt elk account op of maakt het aan, voegt de auteursrol in het tijdschrift toe, wijst de persoon toe aan de inzending en stuurt een persoonlijke e-mail. Werkt bij nieuwe inzendingen en, via de opdrachtregel, bij eerdere inzendingen die zich nog in het redactieproces bevinden."
+
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Medeauteurs worden uitsluitend op basis van het e-mailadres gekoppeld, nooit op naam. Bestaande accounts worden nooit gewijzigd of opnieuw geactiveerd. Het opdrachtregelprogramma tools/backfill.php verwerkt inzendingen die zijn voltooid voordat de plugin werd ingeschakeld."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Bevestiging inzending"
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Bij het inschakelen van de plugin is de bevestiging die wordt verstuurd wanneer een inzending wordt voltooid, gewijzigd van ‘alle auteurs’ naar ‘alleen de auteur die een inzending doet’, zodat elke medeauteur alleen de e-mail van de plugin ontvangt. De vorige waarde wordt hersteld wanneer de plugin wordt uitgeschakeld, tenzij deze intussen handmatig is gewijzigd."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Het tijdschrift is zo ingesteld dat de bevestiging van de inzending naar alle auteurs wordt verstuurd. Medeauteurs ontvangen dan die e-mail én de e-mail van de plugin. Om hun slechts één e-mail te sturen, stelt u de bevestiging onder Redactieproces > E-mails in op alleen de auteur die de inzending doet, of schakelt u deze plugin uit en weer in."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "De bevestiging van de inzending wordt niet naar alle auteurs verstuurd, dus medeauteurs ontvangen alleen de e-mail van de plugin."
+
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Koppeling"
+
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Medeauteurs automatisch koppelen wanneer een inzending wordt voltooid, of wanneer een bijdrager wordt toegevoegd aan een inzending die zich al in het redactieproces bevindt"
+
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Een account aanmaken wanneer geen enkele gebruiker het e-mailadres van de medeauteur heeft (indien uitgeschakeld, wordt de medeauteur als in afwachting geregistreerd)"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Auteursgroep voor gekoppelde medeauteurs"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Alle medeauteurs worden aan deze groep gekoppeld, ongeacht welke groep in het bijdragersformulier voor hen is gekozen. Alleen auteursgroepen met toegang tot het redactieproces worden weergegeven."
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "De groep Auteur van het tijdschrift"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Kies een auteursgroep van dit tijdschrift."
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "E-mail"
+
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "De medeauteur een e-mail sturen wanneer die wordt gekoppeld"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Aantal pogingen om de e-mail te bezorgen"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Het aantal pogingen moet een geheel getal van 1 tot en met 10 zijn."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Aantal dagen dat de wachtwoordlink geldig blijft"
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Voor accounts die door de plugin zijn aangemaakt. De link werkt niet meer zodra het wachtwoord is ingesteld."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Het aantal dagen moet een geheel getal van 1 tot en met 30 zijn."
+
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Logboek"
+
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Elke koppelactie naar het foutenlogboek van de applicatie schrijven (fouten worden altijd gelogd)"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Er is een account voor u aangemaakt met de gebruikersnaam <strong>{$username}</strong>. Gebruik deze beveiligde link, die {$days} dagen geldig is, om uw wachtwoord in te stellen: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Log in met uw gebruikelijke gebruikersnaam (<strong>{$username}</strong>) en wachtwoord. Als u uw wachtwoord niet meer weet, kunt u het hier opnieuw instellen: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

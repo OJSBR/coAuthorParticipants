@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: de\n"
+
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Co-Autor/in als Beteiligte/r der Einreichung verknüpft"
+
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Wird vom Plugin „Co-Autor/innen als Beteiligte“ an eine/n Co-Autor/in gesendet, wenn deren/dessen Konto als Beteiligte/r mit der Rolle Autor/in mit einer Einreichung verknüpft wird."
+
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Zugang zum Konto: bei einem neuen Konto der Benutzer/innen-Name und ein Link zum Festlegen des Passworts, bei einem bestehenden Konto der Hinweis, die bisherigen Zugangsdaten zu verwenden"
+
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Sicherer, zeitlich begrenzter Link zum Festlegen des Passworts eines vom Plugin erstellten Kontos (leer bei bestehenden Konten)"
+
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Sie sind jetzt Beteiligte/r der Einreichung {$submissionId}"
+
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Sehr geehrte/r {$recipientName},</p><p>Sie wurden als Co-Autor/in der Einreichung „{$submissionTitle}“ angegeben, die bei {$contextName} eingegangen ist.</p><p>Ihr Konto wurde als Beteiligte/r mit der Einreichung verknüpft. Ab sofort können Sie den redaktionellen Fortschritt verfolgen und auf die Informationen zugreifen, die den Autor/innen zur Verfügung gestellt werden.</p><p>ID der Einreichung: {$submissionId}<br />Benutzer/innen-Name: {$recipientUsername}<br />Zugang: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Bei Fragen wenden Sie sich bitte an {$contactEmail}.</p>{$contextSignature}"

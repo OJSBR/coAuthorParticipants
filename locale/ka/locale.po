@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ka\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "თანაავტორები მონაწილეებად"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "შენატანის ავტორთა სიაში მითითებულ თანაავტორებს აქცევს მომხმარებლებად, რომლებიც ავტორის როლით მონაწილეობენ ამ შენატანის სარედაქციო სამუშაო პროცესში: პოულობს ან ქმნის თითოეულის ანგარიშს, ჟურნალში ამატებს ავტორის როლს, ნიშნავს მას შენატანზე და აგზავნის ინდივიდუალურ ელწერილს. მოქმედებს ახალ შენატანებზე, ბრძანების ზოლიდან კი — ასევე ადრინდელ შენატანებზე, რომლებიც ჯერ კიდევ სამუშაო პროცესში არიან."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "თანაავტორები იდენტიფიცირდებიან მხოლოდ ელფოსტის მისამართით, არასოდეს — სახელით. არსებული ანგარიშები არასოდეს იცვლებიან და ხელახლა არ აქტიურდებიან. ბრძანების ზოლის ინსტრუმენტი tools/backfill.php ამუშავებს შენატანებს, რომლებიც დასრულდა პლაგინის ჩართვამდე."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "შენატანის მიღების დადასტურება"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "პლაგინის ჩართვისას შენატანის დასრულებისას გასაგზავნი მიღების დადასტურების პარამეტრი შეიცვალა მნიშვნელობიდან „ყველა ავტორი“ მნიშვნელობაზე „შენატანის გამომგზავნი ავტორი“, რათა თითოეულმა თანაავტორმა მიიღოს მხოლოდ პლაგინის ელწერილი. პლაგინის გამორთვისას წინა მნიშვნელობა აღდგება, თუ ის ამ დროის განმავლობაში ხელით არ შეიცვალა."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "ჟურნალი დაყენებულია ისე, რომ შენატანის მიღების დადასტურება ეგზავნოს ყველა ავტორს. თანაავტორები მიიღებენ როგორც ამ ელწერილს, ისე პლაგინის ელწერილს. იმისათვის, რომ მიიღონ მხოლოდ ერთი, სამუშაო პროცესი > ელფოსტა განყოფილებაში დააყენეთ მიღების დადასტურების გაგზავნა შენატანის გამომგზავნ ავტორზე, ან გამორთეთ და ხელახლა ჩართეთ ეს პლაგინი."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "შენატანის მიღების დადასტურება ყველა ავტორს არ ეგზავნება, ასე რომ თანაავტორები იღებენ მხოლოდ პლაგინის ელწერილს."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "დაკავშირება"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "თანაავტორების ავტომატური დაკავშირება, როდესაც შენატანი დასრულდება, ან როდესაც ავტორთა სიას ემატება ახალი წევრი შენატანში, რომელიც უკვე სამუშაო პროცესშია"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "ანგარიშის შექმნა, როდესაც არცერთ მომხმარებელს არ აქვს თანაავტორის ელფოსტის მისამართი (გამორთვის შემთხვევაში თანაავტორი აღირიცხება, როგორც მოლოდინში მყოფი)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "დაკავშირებული თანაავტორების ავტორთა ჯგუფი"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "ყველა თანაავტორი უკავშირდება ამ ჯგუფს, მიუხედავად იმისა, თუ რომელი ჯგუფი აირჩიეს მისთვის ავტორთა სიის წევრის ფორმაში. ნაჩვენებია მხოლოდ ის ავტორთა ჯგუფები, რომლებსაც აქვთ წვდომა სამუშაო პროცესზე."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "ჟურნალის ჯგუფი „ავტორი“"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "აირჩიეთ ამ ჟურნალის ავტორთა ჯგუფი."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "ელფოსტა"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "ელწერილის გაგზავნა თანაავტორისთვის, როდესაც ის დაკავშირდება"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "ელწერილის გაგზავნის მცდელობების რაოდენობა"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "მცდელობების რაოდენობა უნდა იყოს მთელი რიცხვი 1-დან 10-მდე."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "პაროლის ბმულის მოქმედების ვადა (დღეები)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "პლაგინის მიერ შექმნილი ანგარიშებისთვის. ბმული წყვეტს მოქმედებას, როგორც კი პაროლი დაყენდება."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "დღეების რაოდენობა უნდა იყოს მთელი რიცხვი 1-დან 30-მდე."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "ლოგი"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "დაკავშირების თითოეული ქმედების ჩაწერა აპლიკაციის შეცდომების ლოგში (შეცდომები ყოველთვის ჩაიწერება)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>თქვენთვის შეიქმნა ანგარიში მომხმარებლის სახელით <strong>{$username}</strong>. პაროლის ასარჩევად, გთხოვთ, გამოიყენეთ ეს დაცული ბმული, რომელიც მოქმედებს {$days} დღის განმავლობაში: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>გთხოვთ, შედით თქვენი ჩვეული მომხმარებლის სახელით (<strong>{$username}</strong>) და პაროლით. თუ არ გახსოვთ პაროლი, შეგიძლიათ მისი ჩამოყრა აქ: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: gl\n"
+
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Coautores participantes"
+
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Converte os coautores/as indicados na lista de colaboradores dun envío en usuarios/as que participan no seu fluxo de traballo editorial, co rol de autor/a: localiza ou crea cada conta, engade o rol de autor/a na revista, asigna a persoa ao envío e envíalle un correo electrónico individual. Actúa sobre os envíos novos e, desde a liña de comandos, sobre os envíos anteriores que aínda están no fluxo de traballo."
+
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Os coautores/as identifícanse só polo enderezo de correo electrónico, nunca polo nome. As contas existentes nunca se modifican nin se reactivan. A ferramenta de liña de comandos tools/backfill.php procesa os envíos completados antes de activar o módulo."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Confirmación do envío"
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Ao activar o módulo, a confirmación que se envía cando se completa un envío pasou de «todos os autores/as» a «só o autor/a que realiza o envío», para que cada coautor/a reciba unicamente o correo electrónico do módulo. O valor anterior restáurase ao desactivar o módulo, agás que se modificase manualmente entrementres."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "A revista está configurada para enviar a confirmación do envío a todos os autores/as. Os coautores/as recibirán ese correo electrónico e tamén o do módulo. Para que reciban só un, configure a confirmación para que se envíe só ao autor/a que realiza o envío en Fluxo de traballo > Correos electrónicos, ou desactive e volva activar este módulo."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "A confirmación do envío non se envía a todos os autores/as, polo que os coautores/as só reciben o correo electrónico do módulo."
+
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Vinculación"
+
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Vincular automaticamente os coautores/as cando se complete un envío, ou cando se engada un colaborador/a a un envío que xa está no fluxo de traballo"
+
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Crear unha conta cando ningún usuario/a teña o enderezo de correo electrónico do coautor/a (se está desactivado, o coautor/a queda rexistrado como pendente)"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Grupo de autor/a dos coautores/as vinculados"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Todos os coautores/as vincúlanse con este grupo, sexa cal sexa o grupo escollido para eles no formulario do colaborador/a. Só se mostran os grupos de autor/a con acceso ao fluxo de traballo."
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "O grupo Autor/a da revista"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Escolla un grupo de autor/a desta revista."
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Correo electrónico"
+
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Enviar un correo electrónico ao coautor/a cando se vincule"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Intentos de envío do correo electrónico"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "O número de intentos debe ser un número enteiro entre 1 e 10."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Días de validez da ligazón do contrasinal"
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Para as contas creadas polo módulo. A ligazón deixa de funcionar en canto se define o contrasinal."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "O número de días debe ser un número enteiro entre 1 e 30."
+
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Rexistro"
+
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Rexistrar cada acción de vinculación no rexistro de erros da aplicación (os erros rexístranse sempre)"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Creouse unha conta para vostede co nome de usuario/a <strong>{$username}</strong>. Para escoller o seu contrasinal, utilice esta ligazón segura, válida durante {$days} días: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Acceda co seu nome de usuario/a habitual (<strong>{$username}</strong>) e o seu contrasinal. Se non lembra o contrasinal, pode restablecelo aquí: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

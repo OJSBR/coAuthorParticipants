@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: az\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "İştirakçı həmmüəlliflər"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Təqdimatın töhfə edənlər siyahısında göstərilən həmmüəllifləri müəllif rolu ilə həmin təqdimatın redaksiya iş axınında iştirak edən istifadəçilərə çevirir: hər hesabı tapır və ya yaradır, jurnalda müəllif rolunu əlavə edir, onu təqdimata təyin edir və fərdi e-poçt göndərir. Yeni təqdimatlarda, komanda sətri vasitəsilə isə hələ iş axınında olan əvvəlki təqdimatlarda işləyir."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Həmmüəlliflər yalnız e-poçt ünvanına görə uyğunlaşdırılır, heç vaxt ada görə. Mövcud hesablar heç vaxt dəyişdirilmir və yenidən aktivləşdirilmir. tools/backfill.php komanda sətri aləti əlavə aktivləşdirilməzdən əvvəl tamamlanmış təqdimatları emal edir."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Təqdimatın qəbul bildirişi"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Əlavə aktivləşdirildikdə, təqdimat tamamlanarkən göndərilən qəbul bildirişi \"bütün müəlliflər\" seçimindən \"təqdim edən müəllif\" seçiminə dəyişdirildi ki, hər həmmüəllif yalnız əlavənin e-poçtunu alsın. Əlavə deaktiv edildikdə, bu müddətdə əl ilə dəyişdirilməyibsə, əvvəlki dəyər bərpa olunur."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Jurnal təqdimatın qəbul bildirişini bütün müəlliflərə göndərmək üçün tənzimlənib. Həmmüəlliflər həm həmin e-poçtu, həm də əlavənin e-poçtunu alacaqlar. Onlara yalnız birinin göndərilməsi üçün İş axını > emaillər bölməsində qəbul bildirişini təqdim edən müəllifə təyin edin və ya bu əlavəni deaktiv edib yenidən aktivləşdirin."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Təqdimatın qəbul bildirişi bütün müəlliflərə göndərilmir, buna görə həmmüəlliflər yalnız əlavənin e-poçtunu alırlar."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Əlaqələndirmə"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Təqdimat tamamlandıqda və ya artıq iş axınında olan təqdimata töhfəçi əlavə edildikdə həmmüəllifləri avtomatik əlaqələndirin"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Heç bir istifadəçinin həmmüəllifin e-poçt ünvanı olmadıqda hesab yaradın (söndürüldükdə həmmüəllif gözləmədə kimi qeydə alınır)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Əlaqələndirilmiş həmmüəlliflər üçün müəllif qrupu"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Töhfəçi formunda onlar üçün hansı qrup seçilməsindən asılı olmayaraq, hər həmmüəllif bu qrupla əlaqələndirilir. Yalnız iş axınına çıxışı olan müəllif qrupları göstərilir."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Jurnalın Müəllif qrupu"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Bu jurnalın müəllif qrupunu seçin."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "E-poçt"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Həmmüəllif əlaqələndirildikdə ona e-poçt göndərin"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "E-poçt göndərmə cəhdlərinin sayı"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Cəhdlərin sayı 1-dən 10-a qədər tam ədəd olmalıdır."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Şifrə linkinin etibarlı olduğu günlərin sayı"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Əlavənin yaratdığı hesablar üçün. Şifrə təyin edilən kimi link işləməyi dayandırır."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Günlərin sayı 1-dən 30-a qədər tam ədəd olmalıdır."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Qeydlər"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Hər əlaqələndirmə əməliyyatını tətbiqin xəta qeydlərinə yazın (xətalar həmişə yazılır)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Sizin üçün <strong>{$username}</strong> istifadəçi adı ilə hesab yaradılıb. Şifrənizi seçmək üçün {$days} gün etibarlı olan bu təhlükəsiz linkdən istifadə edin: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Adi istifadəçi adınız (<strong>{$username}</strong>) və şifrənizlə daxil olun. Şifrənizi xatırlamırsınızsa, onu burada sıfırlaya bilərsiniz: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

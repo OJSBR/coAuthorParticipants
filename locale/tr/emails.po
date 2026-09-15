@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: tr\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Ortak yazar gönderi katılımcısı olarak bağlandı"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Katılımcı Ortak Yazarlar eklentisi, bir ortak yazarın hesabını yazar rolüyle katılımcı olarak bir gönderiye bağladığında ortak yazara gönderilir."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Hesaba nasıl erişileceği: yeni bir hesap için kullanıcı adı ve şifre belirleme bağlantısı, mevcut bir hesap için ise mevcut giriş bilgilerini kullanma hatırlatması"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Eklenti tarafından oluşturulan bir hesabın şifresini belirlemek için güvenli ve geçici bağlantı (mevcut hesaplar için boş)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Artık {$submissionId} numaralı gönderinin katılımcısısınız"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Sayın {$recipientName},</p><p>{$contextName} tarafından alınan \"{$submissionTitle}\" başlıklı gönderide ortak yazar olarak belirtildiniz.</p><p>Hesabınız bu gönderiye katılımcı olarak bağlanmıştır. Bundan sonra gönderinin editoryal sürecini takip edebilir ve yazarlara sunulan bilgilere erişebilirsiniz.</p><p>Gönderi numarası: {$submissionId}<br />Kullanıcı Adı: {$recipientUsername}<br />Erişim: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Herhangi bir sorunuz olursa lütfen {$contactEmail} adresinden bizimle iletişime geçiniz.</p>{$contextSignature}"

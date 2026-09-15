@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: de\n"
+
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Co-Autor/innen als Beteiligte"
+
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Macht die in der Beiträger/innen-Liste einer Einreichung angegebenen Co-Autor/innen zu Benutzer/innen, die mit der Rolle Autor/in am redaktionellen Workflow dieser Einreichung beteiligt sind: Das Plugin findet oder erstellt jedes Konto, fügt die Autor/innen-Rolle in der Zeitschrift hinzu, weist die Person der Einreichung zu und sendet eine individuelle E-Mail. Es wirkt bei neuen Einreichungen und, über die Kommandozeile, bei früheren Einreichungen, die sich noch im Workflow befinden."
+
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Co-Autor/innen werden ausschließlich über die E-Mail-Adresse zugeordnet, niemals über den Namen. Bestehende Konten werden nie verändert oder reaktiviert. Das Kommandozeilen-Werkzeug tools/backfill.php verarbeitet Einreichungen, die abgeschlossen wurden, bevor das Plugin aktiviert wurde."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Bestätigung der Einreichung"
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Beim Aktivieren des Plugins wurde die Bestätigung, die beim Abschließen einer Einreichung versendet wird, von „An alle Autor/innen“ auf „Nur an den/die einreichende/n Autor/in“ umgestellt, damit jede/r Co-Autor/in nur die E-Mail des Plugins erhält. Der vorherige Wert wird beim Deaktivieren des Plugins wiederhergestellt, sofern er zwischenzeitlich nicht manuell geändert wurde."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Die Zeitschrift ist so eingestellt, dass die Bestätigung der Einreichung an alle Autor/innen gesendet wird. Co-Autor/innen erhalten dann diese E-Mail und zusätzlich die E-Mail des Plugins. Damit sie nur eine erhalten, stellen Sie die Bestätigung unter Workflow > E-Mails auf den/die einreichende/n Autor/in um, oder deaktivieren und aktivieren Sie dieses Plugin erneut."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Die Bestätigung der Einreichung wird nicht an alle Autor/innen gesendet, daher erhalten Co-Autor/innen nur die E-Mail des Plugins."
+
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Verknüpfung"
+
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Co-Autor/innen automatisch verknüpfen, wenn eine Einreichung abgeschlossen wird oder wenn ein/e Beiträger/in zu einer Einreichung hinzugefügt wird, die sich bereits im Workflow befindet"
+
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Ein Konto erstellen, wenn kein/e Benutzer/in die E-Mail-Adresse des/der Co-Autor/in hat (wenn deaktiviert, wird der/die Co-Autor/in als ausstehend vermerkt)"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Autor/innen-Gruppe für verknüpfte Co-Autor/innen"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Alle Co-Autor/innen werden mit dieser Gruppe verknüpft, unabhängig davon, welche Gruppe im Beiträger/innen-Formular für sie gewählt wurde. Nur Autor/innen-Gruppen mit Zugriff auf den Workflow werden aufgeführt."
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Die Gruppe „Autor/in“ der Zeitschrift"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Wählen Sie eine Autor/innen-Gruppe dieser Zeitschrift."
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "E-Mail"
+
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Dem/der Co-Autor/in eine E-Mail senden, wenn er/sie verknüpft wird"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Zustellversuche für die E-Mail"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Die Anzahl der Versuche muss eine ganze Zahl von 1 bis 10 sein."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Gültigkeitsdauer des Passwort-Links in Tagen"
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Für vom Plugin erstellte Konten. Der Link funktioniert nicht mehr, sobald das Passwort festgelegt wurde."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Die Anzahl der Tage muss eine ganze Zahl von 1 bis 30 sein."
+
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Protokoll"
+
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Jede Verknüpfungsaktion in das Fehlerprotokoll der Anwendung schreiben (Fehler werden immer protokolliert)"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Für Sie wurde ein Konto mit dem Benutzer/innen-Namen <strong>{$username}</strong> angelegt. Um Ihr Passwort festzulegen, verwenden Sie bitte diesen sicheren Link, der {$days} Tage gültig ist: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Melden Sie sich mit Ihrem gewohnten Benutzer/innen-Namen (<strong>{$username}</strong>) und Ihrem Passwort an. Falls Sie sich nicht an Ihr Passwort erinnern, können Sie es hier zurücksetzen: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

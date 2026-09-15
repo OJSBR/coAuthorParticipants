@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ka\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "თანაავტორი დაკავშირდა, როგორც შენატანის მონაწილე"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "ეგზავნება თანაავტორს, როდესაც პლაგინი „თანაავტორები მონაწილეებად“ მის ანგარიშს დააკავშირებს შენატანთან, როგორც მონაწილეს ავტორის როლით."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "როგორ შევიდეთ ანგარიშზე: ახალი ანგარიშის შემთხვევაში — მომხმარებლის სახელი და პაროლის დაყენების ბმული, არსებული ანგარიშის შემთხვევაში — შეხსენება, რომ გამოიყენოს ამჟამინდელი მონაცემები"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "დაცული, დროებითი ბმული პლაგინის მიერ შექმნილი ანგარიშის პაროლის დასაყენებლად (ცარიელია არსებული ანგარიშებისთვის)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "თქვენ ახლა შენატანის {$submissionId} მონაწილე ხართ"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>პატივცემულო {$recipientName},</p><p>თქვენ მითითებული ხართ „{$submissionTitle}“ შენატანის თანაავტორად, რომელიც მიიღა {$contextName}.</p><p>თქვენი ანგარიში დაკავშირდა შენატანთან, როგორც მონაწილე. ამიერიდან შეგიძლიათ თვალყური ადევნოთ მის სარედაქციო პროცესს და იხილოთ ავტორებისთვის ხელმისაწვდომი ინფორმაცია.</p><p>შენატანის ID: {$submissionId}<br />მომხმარებლის სახელი: {$recipientUsername}<br />წვდომა: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>შეკითხვების შემთხვევაში, გთხოვთ, დაგვიკავშირდით მისამართზე {$contactEmail}.</p>{$contextSignature}"

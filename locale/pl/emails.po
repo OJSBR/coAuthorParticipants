@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: pl\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Współautor powiązany ze zgłoszeniem jako uczestnik"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Wysyłana do współautora, gdy wtyczka Współautorzy jako uczestnicy powiąże jego konto ze zgłoszeniem jako uczestnika z rolą autora."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Sposób dostępu do konta: nazwa użytkownika i link do ustawienia hasła w przypadku nowego konta albo przypomnienie o użyciu dotychczasowych danych logowania w przypadku istniejącego konta"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Bezpieczny, tymczasowy link do ustawienia hasła konta utworzonego przez wtyczkę (pusty w przypadku istniejących kont)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Jest Pani/Pan teraz uczestnikiem zgłoszenia {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Szanowna Pani / Szanowny Panie {$recipientName},</p><p>uprzejmie informujemy, że figuruje Pani/Pan jako współautor zgłoszenia „{$submissionTitle}”, które wpłynęło do czasopisma {$contextName}.</p><p>Pani/Pana konto zostało powiązane ze zgłoszeniem jako uczestnik. Od teraz może Pani/Pan śledzić postęp prac redakcyjnych i uzyskać dostęp do informacji udostępnianych autorom.</p><p>Identyfikator zgłoszenia: {$submissionId}<br />Nazwa użytkownika: {$recipientUsername}<br />Dostęp: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>W razie pytań prosimy o kontakt pod adresem {$contactEmail}.</p>{$contextSignature}"

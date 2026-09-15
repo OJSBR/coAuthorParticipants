@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: vi\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Đồng tác giả tham gia"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Chuyển các đồng tác giả có trong danh sách người đóng góp của một bài nộp thành người dùng tham gia quy trình biên tập của bài nộp đó, với vai trò tác giả: tìm hoặc tạo từng tài khoản, thêm vai trò tác giả trong tạp chí, phân công người dùng vào bài nộp và gửi email riêng cho từng người. Áp dụng cho các bài nộp mới và, thông qua dòng lệnh, cho các bài nộp trước đây vẫn còn trong quy trình."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Đồng tác giả chỉ được đối chiếu theo địa chỉ email, không bao giờ theo tên. Các tài khoản hiện có không bao giờ bị sửa đổi hoặc kích hoạt lại. Công cụ dòng lệnh tools/backfill.php xử lý các bài nộp đã hoàn tất trước khi plugin được bật."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Xác nhận nộp bài"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Khi plugin được bật, thư xác nhận gửi đi khi hoàn tất bài nộp đã được đổi từ \"Gửi email cho tất cả các tác giả\" sang \"Chỉ gửi email cho tác giả gửi bài\", để mỗi đồng tác giả chỉ nhận email của plugin. Giá trị trước đó sẽ được khôi phục khi plugin bị tắt, trừ khi giá trị này đã được thay đổi thủ công trong thời gian đó."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Tạp chí đang được thiết lập để gửi xác nhận nộp bài cho tất cả các tác giả. Đồng tác giả sẽ nhận cả email đó và email của plugin. Để họ chỉ nhận một email, hãy đặt xác nhận thành \"Chỉ gửi email cho tác giả gửi bài\" trong Quy trình làm việc > Email, hoặc tắt rồi bật lại plugin này."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Xác nhận nộp bài không được gửi cho tất cả các tác giả, vì vậy đồng tác giả chỉ nhận email của plugin."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Liên kết"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Tự động liên kết đồng tác giả khi một bài nộp được hoàn tất, hoặc khi một người đóng góp được thêm vào bài nộp đã ở trong quy trình"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Tạo tài khoản khi không có người dùng nào có địa chỉ email của đồng tác giả (khi tắt, đồng tác giả được ghi nhận là đang chờ)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Nhóm tác giả cho các đồng tác giả được liên kết"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Mọi đồng tác giả đều được liên kết với nhóm này, bất kể nhóm nào đã được chọn cho họ trong biểu mẫu người đóng góp. Chỉ những nhóm tác giả có quyền truy cập quy trình mới được liệt kê."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Nhóm Tác giả của tạp chí"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Hãy chọn một nhóm tác giả của tạp chí này."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Email"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Gửi email cho đồng tác giả khi họ được liên kết"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Số lần thử gửi email"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Số lần thử phải là số nguyên từ 1 đến 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Số ngày liên kết đặt mật khẩu còn hiệu lực"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Dành cho các tài khoản do plugin tạo. Liên kết sẽ ngừng hoạt động ngay khi mật khẩu được đặt."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Số ngày phải là số nguyên từ 1 đến 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Nhật ký"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Ghi từng thao tác liên kết vào nhật ký lỗi của ứng dụng (lỗi luôn được ghi)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Một tài khoản đã được tạo cho Quý vị với tên người dùng <strong>{$username}</strong>. Để chọn mật khẩu, Quý vị vui lòng sử dụng liên kết bảo mật này, có hiệu lực trong {$days} ngày: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Quý vị vui lòng đăng nhập bằng tên người dùng (<strong>{$username}</strong>) và mật khẩu thường dùng. Nếu không nhớ mật khẩu, Quý vị có thể đặt lại tại đây: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: fr_CA\n"
+
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Coauteurs-es participants-es"
+
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Transforme les coauteurs-es indiqués-es dans la liste des contributeurs-trices d'une soumission en utilisateurs-trices participant au flux des travaux de cette soumission, avec le rôle d'auteur-e : retrouve ou crée chaque compte, ajoute le rôle d'auteur-e dans la revue, assigne la personne à la soumission et lui envoie un courriel individuel. Agit sur les nouvelles soumissions et, en ligne de commande, sur les soumissions antérieures qui se trouvent encore dans le flux des travaux."
+
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Les coauteurs-es sont identifiés-es uniquement par leur adresse de courriel, jamais par leur nom. Les comptes existants ne sont jamais modifiés ni réactivés. L'outil en ligne de commande tools/backfill.php traite les soumissions finalisées avant l'activation du plugiciel."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Confirmation de soumission"
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Lors de l'activation du plugiciel, la confirmation envoyée lorsqu'une soumission est finalisée est passée de « tous-tes les auteur-es » à « uniquement l'auteur-e qui a fait la soumission », afin que chaque coauteur-e ne reçoive que le courriel du plugiciel. La valeur précédente est rétablie lorsque le plugiciel est désactivé, sauf si elle a été modifiée manuellement entre-temps."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "La revue est configurée pour envoyer la confirmation de soumission à tous-tes les auteurs-es. Les coauteurs-es recevront ce courriel ainsi que celui du plugiciel. Pour qu'ils et elles n'en reçoivent qu'un seul, configurez la confirmation pour qu'elle soit envoyée uniquement à l'auteur-e qui a fait la soumission dans Flux des travaux > Courriels, ou désactivez puis réactivez ce plugiciel."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "La confirmation de soumission n'est pas envoyée à tous-tes les auteurs-es; les coauteurs-es ne reçoivent donc que le courriel du plugiciel."
+
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Liaison"
+
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Lier automatiquement les coauteurs-es lorsqu'une soumission est finalisée, ou lorsqu'un-e contributeur-trice est ajouté-e à une soumission qui se trouve déjà dans le flux des travaux"
+
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Créer un compte lorsqu'aucun-e utilisateur-trice ne possède l'adresse de courriel du ou de la coauteur-e (si cette option est désactivée, le ou la coauteur-e est enregistré-e comme en attente)"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Groupe d'auteurs-es des coauteurs-es liés-es"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Tous-tes les coauteurs-es sont liés-es à ce groupe, quel que soit le groupe choisi pour eux et elles dans le formulaire du ou de la contributeur-trice. Seuls les groupes d'auteurs-es ayant accès au flux des travaux sont affichés."
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Le groupe « Auteur-e » de la revue"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Choisissez un groupe d'auteurs-es de cette revue."
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Courriel"
+
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Envoyer un courriel au ou à la coauteur-e lorsqu'il ou elle est lié-e"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Tentatives d'envoi du courriel"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Le nombre de tentatives doit être un nombre entier compris entre 1 et 10."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Durée de validité du lien de mot de passe (en jours)"
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Pour les comptes créés par le plugiciel. Le lien cesse de fonctionner dès que le mot de passe est défini."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Le nombre de jours doit être un nombre entier compris entre 1 et 30."
+
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Journal"
+
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Consigner chaque action de liaison dans le journal des erreurs de l'application (les erreurs sont toujours consignées)"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Un compte a été créé pour vous avec le nom d'utilisateur-trice <strong>{$username}</strong>. Pour choisir votre mot de passe, veuillez utiliser ce lien sécurisé, valide pendant {$days} jours : <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Connectez-vous avec votre nom d'utilisateur-trice habituel (<strong>{$username}</strong>) et votre mot de passe. Si vous ne vous souvenez plus de votre mot de passe, vous pouvez le réinitialiser ici : <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ja\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "共著者参加者"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "投稿の寄稿者に登録された共著者を、著者ロールでその投稿の編集ワークフローに参加するユーザーにします。各アカウントを検索または作成し、雑誌に著者ロールを追加し、ユーザーを投稿に割り当て、個別にメールを送信します。新しい投稿に対して動作するほか、コマンドラインから、まだワークフロー上にある過去の投稿にも適用できます。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "共著者の照合はメールアドレスのみで行い、氏名では行いません。既存のアカウントが変更または再有効化されることはありません。コマンドラインツール tools/backfill.php は、プラグインを有効にする前に完了した投稿を処理します。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "投稿受付確認"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "プラグインを有効にした際、投稿完了時に送信される受付確認の設定を「すべての著者にメールを送信する」から「投稿した著者にのみメールを送信する」に変更しました。これにより、各共著者はプラグインのメールのみを受け取ります。プラグインを無効にすると以前の値に戻ります。ただし、その間に手動で変更された場合は戻りません。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "この雑誌は、投稿受付確認をすべての著者に送信するよう設定されています。共著者はそのメールとプラグインのメールの両方を受け取ります。1通のみにするには、ワークフロー > メール で受付確認を「投稿した著者にのみメールを送信する」に設定するか、このプラグインを一度無効にしてから再度有効にしてください。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "投稿受付確認はすべての著者には送信されないため、共著者はプラグインのメールのみを受け取ります。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "紐付け"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "投稿が完了したとき、またはワークフロー上にある投稿に寄稿者が追加されたときに、共著者を自動的に紐付ける"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "共著者のメールアドレスを持つユーザーがいない場合にアカウントを作成する（オフの場合、共著者は保留として記録されます）"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "紐付けられた共著者の著者グループ"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "寄稿者フォームで選択されたグループにかかわらず、すべての共著者はこのグループで紐付けられます。ワークフローにアクセスできる著者グループのみが表示されます。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "雑誌の「著者」グループ"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "この雑誌の著者グループを選択してください。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "メール"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "共著者が紐付けられたときにメールを送信する"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "メール送信の試行回数"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "試行回数は1から10までの整数で指定してください。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "パスワード設定リンクの有効日数"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "プラグインが作成したアカウントが対象です。パスワードが設定されると、リンクはただちに無効になります。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "日数は1から30までの整数で指定してください。"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "ログ"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "紐付けの各操作をアプリケーションのエラーログに書き込む（エラーは常に書き込まれます）"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>ユーザー名 <strong>{$username}</strong> でアカウントを作成しました。パスワードを設定するには、{$days}日間有効な次の安全なリンクをご利用ください: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>いつものユーザー名（<strong>{$username}</strong>）とパスワードでログインしてください。パスワードをお忘れの場合は、こちらから再設定できます: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

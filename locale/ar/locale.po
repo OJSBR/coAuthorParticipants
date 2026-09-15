@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ar\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "المؤلفون المشاركون كمشاركين"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "يحوّل المؤلفين المشاركين المدرجين ضمن المساهمين في طلب التقديم إلى مستخدمين مشاركين في سير العمل التحريري الخاص به، بدور المؤلف: يعثر على حساب كل منهم أو ينشئه، ويضيف دور المؤلف في المجلة، ويعيّنه لطلب التقديم، ويرسل رسالة بريد الكتروني فردية. يعمل على طلبات التقديم الجديدة، ومن خلال سطر الأوامر على طلبات التقديم السابقة التي لا تزال في سير العمل."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "تتم مطابقة المؤلفين المشاركين من خلال عنوان البريد الالكتروني فقط، وليس بالاسم مطلقًا. لا يتم تعديل الحسابات الموجودة أو إعادة تفعيلها أبدًا. تعالج أداة سطر الأوامر tools/backfill.php طلبات التقديم التي اكتملت قبل تمكين البرنامج الإضافي."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "إشعار استلام طلب التقديم"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "عند تمكين البرنامج الإضافي، تم تغيير إشعار الاستلام الذي يُرسل عند إكمال طلب التقديم من «كل المؤلفين» إلى «المؤلف المقدم للطلب»، لكي يتلقى كل مؤلف مشارك رسالة البرنامج الإضافي فقط. تتم استعادة القيمة السابقة عند تعطيل البرنامج الإضافي، ما لم يتم تغييرها يدويًا في هذه الأثناء."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "المجلة مُعدّة لإرسال إشعار استلام طلب التقديم إلى كل المؤلفين. سيتلقى المؤلفون المشاركون تلك الرسالة ورسالة البرنامج الإضافي أيضًا. لإرسال رسالة واحدة فقط إليهم، اضبط إشعار الاستلام على المؤلف المقدم للطلب في المخطط الانسيابي > رسائل البريد الالكتروني، أو عطّل هذا البرنامج الإضافي ثم مكّنه مجددًا."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "لا يُرسل إشعار استلام طلب التقديم إلى كل المؤلفين، لذا يتلقى المؤلفون المشاركون رسالة البرنامج الإضافي فقط."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "الربط"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "ربط المؤلفين المشاركين تلقائيًا عند إكمال طلب التقديم، أو عند إضافة مساهم إلى طلب تقديم موجود بالفعل في سير العمل"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "إنشاء حساب عندما لا يملك أي مستخدم عنوان البريد الالكتروني للمؤلف المشارك (عند إيقاف هذا الخيار، يُسجَّل المؤلف المشارك على أنه معلّق)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "مجموعة المؤلفين للمؤلفين المشاركين المرتبطين"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "يُربط كل مؤلف مشارك بهذه المجموعة، أيًا كانت المجموعة التي اختيرت له في نموذج المساهم. تُعرض فقط مجموعات المؤلفين التي لديها صلاحية الوصول إلى سير العمل."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "مجموعة «المؤلف» في المجلة"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "اختر مجموعة مؤلفين من هذه المجلة."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "البريد الالكتروني"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "إرسال رسالة بريد الكتروني إلى المؤلف المشارك عند ربطه"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "عدد محاولات إرسال البريد الالكتروني"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "يجب أن يكون عدد المحاولات عددًا صحيحًا من 1 إلى 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "عدد أيام صلاحية رابط كلمة المرور"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "للحسابات التي ينشئها البرنامج الإضافي. يتوقف الرابط عن العمل بمجرد تعيين كلمة المرور."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "يجب أن يكون عدد الأيام عددًا صحيحًا من 1 إلى 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "السجل"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "تسجيل كل عملية ربط في سجل أخطاء التطبيق (تُسجَّل الأخطاء دائمًا)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>تم إنشاء حساب لك باسم الدخول <strong>{$username}</strong>. لاختيار كلمة المرور، يرجى استخدام هذا الرابط الآمن، الصالح لعدد {$days} من الأيام: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>يرجى تسجيل الدخول باسم الدخول المعتاد (<strong>{$username}</strong>) وكلمة المرور الخاصة بك. إذا لم تتذكر كلمة المرور، يمكنك إعادة تعيينها من هنا: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

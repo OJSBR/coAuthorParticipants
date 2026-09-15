@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: en\n"
+
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Coauthor Participants"
+
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Turns the co-authors listed in a submission's contributors into users taking part in its editorial workflow, with the author role: finds or creates each account, adds the author role in the journal, assigns it to the submission and sends an individual email. Works on new submissions and, from the command line, on earlier submissions still in the workflow."
+
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Co-authors are matched by email address only, never by name. Existing accounts are never modified or reactivated. The command line tool tools/backfill.php processes submissions completed before the plugin was enabled."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Submission acknowledgement"
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "When the plugin was enabled, the acknowledgement sent when a submission is completed was changed from \"all authors\" to \"the submitting author\", so that each co-author receives only the plugin's email. The previous value is restored when the plugin is disabled, unless it has been changed by hand in the meantime."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "The journal is set to send the submission acknowledgement to all authors. Co-authors will receive that email and the plugin's email. To send them only one, set the acknowledgement to the submitting author in Workflow > Emails, or disable and enable this plugin again."
+
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "The submission acknowledgement is not sent to all authors, so co-authors receive only the plugin's email."
+
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Linking"
+
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Link co-authors automatically when a submission is completed, or when a contributor is added to a submission already in the workflow"
+
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Create an account when no user has the co-author's email address (when off, the co-author is recorded as pending)"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Author group for linked co-authors"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Every co-author is linked with this group, whatever group was chosen for them in the contributor form. Only author groups with access to the workflow are listed."
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "The journal's Author group"
+
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Choose an author group of this journal."
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Email"
+
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Send the co-author an email when they are linked"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Email delivery attempts"
+
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "The number of attempts must be a whole number from 1 to 10."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Days the password link stays valid"
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "For accounts created by the plugin. The link stops working as soon as the password is set."
+
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "The number of days must be a whole number from 1 to 30."
+
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Log"
+
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Write each linking action to the application error log (errors are always written)"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>An account was created for you with the username <strong>{$username}</strong>. To choose your password, use this secure link, valid for {$days} days: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Log in with your usual username (<strong>{$username}</strong>) and password. If you do not remember your password, you can reset it here: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

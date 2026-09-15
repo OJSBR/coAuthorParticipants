@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ru\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Соавторы-участники"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Превращает соавторов, указанных в списке авторов материала, в пользователей, участвующих в его редакционном рабочем потоке с ролью автора: находит или создает каждую учетную запись, добавляет роль автора в журнале, назначает пользователя на материал и отправляет индивидуальное письмо. Работает с новыми материалами, а из командной строки — и с ранее отправленными материалами, которые все еще находятся в рабочем потоке."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Соавторы сопоставляются только по адресу электронной почты, никогда по имени. Существующие учетные записи никогда не изменяются и не активируются повторно. Инструмент командной строки tools/backfill.php обрабатывает материалы, отправка которых была завершена до включения модуля."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Подтверждение отправки материала"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "При включении модуля подтверждение, отправляемое при завершении отправки материала, было изменено с «Отправить письмо всем авторам» на «Отправить письмо только автору, подавшему материал», чтобы каждый соавтор получал только письмо модуля. Прежнее значение восстанавливается при выключении модуля, если за это время оно не было изменено вручную."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "В журнале настроена отправка подтверждения отправки материала всем авторам. Соавторы получат и это письмо, и письмо модуля. Чтобы они получали только одно, выберите в разделе «Рабочий поток > Письма электронной почты» вариант «Отправить письмо только автору, подавшему материал» или выключите и снова включите этот модуль."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Подтверждение отправки материала не отправляется всем авторам, поэтому соавторы получают только письмо модуля."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Привязка"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Автоматически привязывать соавторов при завершении отправки материала или при добавлении автора в материал, который уже находится в рабочем потоке"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Создавать учетную запись, если ни у одного пользователя нет адреса электронной почты соавтора (если выключено, соавтор записывается как ожидающий)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Группа авторов для привязанных соавторов"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Каждый соавтор привязывается к этой группе, независимо от того, какая группа была выбрана для него в форме автора. Показываются только группы авторов с доступом к рабочему потоку."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Группа «Автор» журнала"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Выберите группу авторов этого журнала."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Электронная почта"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Отправлять соавтору письмо при привязке"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Количество попыток доставки письма"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Количество попыток должно быть целым числом от 1 до 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Срок действия ссылки для установки пароля (в днях)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Для учетных записей, созданных модулем. Ссылка перестает работать сразу после установки пароля."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Количество дней должно быть целым числом от 1 до 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Журнал событий"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Записывать каждое действие по привязке в журнал ошибок приложения (ошибки записываются всегда)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Для Вас создана учетная запись с именем пользователя <strong>{$username}</strong>. Чтобы задать пароль, воспользуйтесь этой защищенной ссылкой, действительной в течение {$days} дн.: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Войдите, используя Ваше обычное имя пользователя (<strong>{$username}</strong>) и пароль. Если Вы не помните пароль, его можно сбросить здесь: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: pt_BR\n"
+
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Coautor vinculado como participante da submissão"
+
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Enviado a um coautor quando sua conta é vinculada a uma submissão como participante com papel de autor, pelo plugin Coautores Participantes."
+
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Como acessar a conta: o usuário e um link para definir a senha, no caso de conta nova, ou a orientação para usar as credenciais atuais, no caso de conta existente"
+
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Link seguro e temporário para definir a senha de uma conta criada pelo plugin (vazio para contas existentes)"
+
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Você agora é participante da submissão {$submissionId}"
+
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Prezado(a) {$recipientName},</p><p>Você foi informado(a) como coautor(a) da submissão “{$submissionTitle}”, recebida pela revista {$contextName}.</p><p>Seu usuário foi vinculado como participante da submissão. A partir de agora, você poderá acompanhar o andamento editorial e acessar as informações disponibilizadas aos autores.</p><p>Identificação da submissão: {$submissionId}<br />Usuário: {$recipientUsername}<br />Acesso: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Em caso de dúvida, entre em contato pelo endereço {$contactEmail}.</p>{$contextSignature}"

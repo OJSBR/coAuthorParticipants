@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: id\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Penulis Pendamping sebagai Partisipan"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "Mengubah penulis pendamping yang tercantum dalam daftar kontributor naskah menjadi pengguna yang ikut serta dalam alur kerja editorial naskah tersebut, dengan peran penulis: menemukan atau membuat setiap akun, menambahkan peran penulis di jurnal, menugaskan pengguna ke naskah, dan mengirim email secara perorangan. Berlaku untuk naskah baru dan, melalui baris perintah, untuk naskah sebelumnya yang masih berada dalam alur kerja."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "Penulis pendamping dicocokkan hanya berdasarkan alamat email, tidak pernah berdasarkan nama. Akun yang sudah ada tidak pernah diubah atau diaktifkan kembali. Alat baris perintah tools/backfill.php memproses naskah yang diselesaikan sebelum plugin diaktifkan."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Konfirmasi pengiriman naskah"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "Saat plugin diaktifkan, konfirmasi yang dikirim ketika pengiriman naskah selesai diubah dari \"Mengirimkan email ke semua penulis\" menjadi \"Kirimkan email hanya kepada penulis yang mengirimkan naskah\", sehingga setiap penulis pendamping hanya menerima email dari plugin. Nilai sebelumnya dipulihkan saat plugin dinonaktifkan, kecuali jika telah diubah secara manual sementara itu."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "Jurnal diatur untuk mengirim konfirmasi pengiriman naskah ke semua penulis. Penulis pendamping akan menerima email tersebut dan juga email dari plugin. Agar mereka hanya menerima satu email, atur konfirmasi menjadi \"Kirimkan email hanya kepada penulis yang mengirimkan naskah\" di Alur Kerja > Surel, atau nonaktifkan lalu aktifkan kembali plugin ini."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "Konfirmasi pengiriman naskah tidak dikirim ke semua penulis, sehingga penulis pendamping hanya menerima email dari plugin."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Penautan"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "Tautkan penulis pendamping secara otomatis saat pengiriman naskah selesai, atau saat kontributor ditambahkan ke naskah yang sudah berada dalam alur kerja"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Buat akun jika tidak ada pengguna yang memiliki alamat email penulis pendamping (jika dinonaktifkan, penulis pendamping dicatat sebagai tertunda)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Grup penulis untuk penulis pendamping yang ditautkan"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Setiap penulis pendamping ditautkan dengan grup ini, apa pun grup yang dipilih untuknya pada formulir kontributor. Hanya grup penulis yang memiliki akses ke alur kerja yang ditampilkan."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "Grup Penulis di jurnal"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Pilih grup penulis dari jurnal ini."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "Email"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "Kirim email kepada penulis pendamping saat ditautkan"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "Jumlah percobaan pengiriman email"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "Jumlah percobaan harus berupa bilangan bulat dari 1 sampai 10."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "Masa berlaku tautan kata sandi (hari)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "Untuk akun yang dibuat oleh plugin. Tautan tidak lagi berfungsi segera setelah kata sandi ditetapkan."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "Jumlah hari harus berupa bilangan bulat dari 1 sampai 30."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Log"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Tulis setiap tindakan penautan ke log kesalahan aplikasi (kesalahan selalu ditulis)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Sebuah akun telah dibuat untuk Anda dengan nama pengguna <strong>{$username}</strong>. Untuk menentukan kata sandi Anda, gunakan tautan aman ini, yang berlaku selama {$days} hari: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Silakan masuk dengan nama pengguna (<strong>{$username}</strong>) dan kata sandi yang biasa Anda gunakan. Jika Anda tidak ingat kata sandi, Anda dapat mengatur ulang kata sandi di sini: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"

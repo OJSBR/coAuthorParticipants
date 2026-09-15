@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ms\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Pengarang bersama dipautkan sebagai peserta penyerahan"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Dihantar kepada pengarang bersama apabila akaunnya dipautkan kepada penyerahan sebagai peserta dengan peranan pengarang oleh plugin Pengarang Bersama sebagai Peserta."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Cara mengakses akaun: nama pengguna dan pautan untuk menetapkan kata laluan bagi akaun baharu, atau peringatan untuk menggunakan kelayakan semasa bagi akaun sedia ada"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Pautan selamat dan sementara untuk menetapkan kata laluan akaun yang dicipta oleh plugin (kosong bagi akaun sedia ada)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Anda kini peserta penyerahan {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>{$recipientName} yang dihormati,</p><p>Anda telah disenaraikan sebagai pengarang bersama bagi penyerahan \"{$submissionTitle}\" yang diterima oleh {$contextName}.</p><p>Akaun anda telah dipautkan kepada penyerahan tersebut sebagai peserta. Mulai sekarang, anda boleh mengikuti perkembangan editorialnya dan mengakses maklumat yang disediakan kepada pengarang.</p><p>ID penyerahan: {$submissionId}<br />Nama pengguna: {$recipientUsername}<br />Akses: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Sekiranya anda mempunyai sebarang pertanyaan, sila hubungi kami di {$contactEmail}.</p>{$contextSignature}"

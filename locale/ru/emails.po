@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ru\n"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.name"
+msgstr "Соавтор привязан к материалу как участник"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.description"
+msgstr "Отправляется соавтору, когда модуль «Соавторы-участники» привязывает его учетную запись к материалу в качестве участника с ролью автора."
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.accountAccessInstructions"
+msgstr "Как получить доступ к учетной записи: имя пользователя и ссылка для установки пароля для новой учетной записи или напоминание использовать текущие учетные данные для существующей"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.variable.passwordResetUrl"
+msgstr "Защищенная временная ссылка для установки пароля учетной записи, созданной модулем (пусто для существующих учетных записей)"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.subject"
+msgstr "Теперь Вы участник материала {$submissionId}"
+
+#, fuzzy
+msgid "emails.coauthorParticipantAssigned.body"
+msgstr "<p>Уважаемый(ая) {$recipientName}!</p><p>Вы указаны в качестве соавтора материала «{$submissionTitle}», поступившего в журнал «{$contextName}».</p><p>Ваша учетная запись привязана к материалу в качестве участника. Теперь Вы можете следить за ходом его редакционной обработки и получать доступ к информации, предоставляемой авторам.</p><p>ID материала: {$submissionId}<br />Имя пользователя: {$recipientUsername}<br />Доступ: <a href=\"{$authorSubmissionUrl}\">{$authorSubmissionUrl}</a></p>{$accountAccessInstructions}<p>Если у Вас возникнут вопросы, пожалуйста, свяжитесь с нами по адресу {$contactEmail}.</p>{$contextSignature}"

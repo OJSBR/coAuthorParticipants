@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: hu\n"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.displayName"
+msgstr "Társszerzők mint résztvevők"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.description"
+msgstr "A beküldés közreműködői között felsorolt társszerzőket a beküldés szerkesztési munkafolyamatában szerző szerepkörrel részt vevő felhasználókká alakítja: megkeresi vagy létrehozza az egyes fiókokat, hozzáadja a szerző szerepkört a folyóiratban, hozzárendeli a felhasználót a beküldéshez, és egyéni e-mailt küld. Az új beküldéseknél, parancssorból pedig a még munkafolyamatban lévő korábbi beküldéseknél is működik."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.description"
+msgstr "A társszerzők azonosítása kizárólag e-mail-cím alapján történik, soha nem név alapján. A meglévő fiókokat a bővítmény soha nem módosítja és nem aktiválja újra. A tools/backfill.php parancssori eszköz a bővítmény engedélyezése előtt befejezett beküldéseket dolgozza fel."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.title"
+msgstr "Beküldés visszaigazolása"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.changed"
+msgstr "A bővítmény engedélyezésekor a beküldés befejezésekor küldött visszaigazolás beállítása „E-mail küldése az összes szerzőnek” értékről „E-mail küldése csak a beküldő szerzőnek” értékre változott, hogy minden társszerző csak a bővítmény e-mailjét kapja meg. A korábbi érték a bővítmény kikapcsolásakor visszaáll, kivéve, ha időközben kézzel módosították."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.allAuthors"
+msgstr "A folyóirat úgy van beállítva, hogy a beküldés visszaigazolását az összes szerzőnek elküldje. A társszerzők ezt az e-mailt és a bővítmény e-mailjét is megkapják. Ha azt szeretné, hogy csak egyet kapjanak, a Munkafolyamat > Emailek részben állítsa a visszaigazolást „E-mail küldése csak a beküldő szerzőnek” értékre, vagy kapcsolja ki, majd engedélyezze újra ezt a bővítményt."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.acknowledgement.compatible"
+msgstr "A beküldés visszaigazolását a rendszer nem küldi el az összes szerzőnek, így a társszerzők csak a bővítmény e-mailjét kapják meg."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.linkingArea"
+msgstr "Összekapcsolás"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.autoLink"
+msgstr "A társszerzők automatikus összekapcsolása a beküldés befejezésekor, vagy amikor egy már munkafolyamatban lévő beküldéshez közreműködőt adnak hozzá"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.createAccounts"
+msgstr "Fiók létrehozása, ha egyetlen felhasználó sem rendelkezik a társszerző e-mail-címével (kikapcsolt állapotban a társszerző függőben lévőként kerül rögzítésre)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId"
+msgstr "Az összekapcsolt társszerzők szerzői csoportja"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.description"
+msgstr "Minden társszerző ehhez a csoporthoz kapcsolódik, függetlenül attól, hogy a közreműködői űrlapon melyik csoportot választották neki. Csak a munkafolyamathoz hozzáféréssel rendelkező szerzői csoportok jelennek meg."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.default"
+msgstr "A folyóirat „Szerző” csoportja"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.authorUserGroupId.invalid"
+msgstr "Válasszon egy szerzői csoportot ebből a folyóiratból."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailArea"
+msgstr "E-mail"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.sendEmail"
+msgstr "E-mail küldése a társszerzőnek az összekapcsoláskor"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts"
+msgstr "E-mail kézbesítési kísérletek száma"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.emailMaxAttempts.invalid"
+msgstr "A kísérletek számának 1 és 10 közötti egész számnak kell lennie."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays"
+msgstr "A jelszóbeállító hivatkozás érvényessége (nap)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.description"
+msgstr "A bővítmény által létrehozott fiókokhoz. A hivatkozás a jelszó beállítása után azonnal érvényét veszti."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.passwordLinkDays.invalid"
+msgstr "A napok számának 1 és 30 közötti egész számnak kell lennie."
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logArea"
+msgstr "Napló"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.settings.logDetails"
+msgstr "Minden összekapcsolási művelet naplózása az alkalmazás hibanaplójába (a hibák mindig naplózásra kerülnek)"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessNewAccount"
+msgstr "<p>Létrehoztunk Önnek egy fiókot <strong>{$username}</strong> felhasználónévvel. Jelszava megadásához kérjük, használja ezt a biztonságos hivatkozást, amely {$days} napig érvényes: <a href=\"{$passwordResetUrl}\">{$passwordResetUrl}</a></p>"
+
+#, fuzzy
+msgid "plugins.generic.coAuthorParticipants.email.accessExistingAccount"
+msgstr "<p>Kérjük, jelentkezzen be a szokásos felhasználónevével (<strong>{$username}</strong>) és jelszavával. Ha nem emlékszik a jelszavára, itt állíthatja vissza: <a href=\"{$passwordLostUrl}\">{$passwordLostUrl}</a></p>"
