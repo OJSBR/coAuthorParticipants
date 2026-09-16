@@ -33,6 +33,9 @@ describe('Coauthor Participants plugin', function() {
 	const enableCheckbox = 'input[id^="select-cell-coauthorparticipantsplugin-enabled"]';
 
 	let csrfToken = null;
+	// The author role of this journal, taken from an article that already has one:
+	// there is no user groups endpoint, and the id differs between installations.
+	let authorGroupId = Cypress.env('authorUserGroupId') || null;
 	let submissionId = Cypress.env('submissionId') || null;
 
 	// ---- OJSBR spec helpers (padrão v2): work on OJS/OMP 3.3, 3.4 and 3.5 and in PKP's CI ----
@@ -71,6 +74,28 @@ describe('Coauthor Participants plugin', function() {
 				cy.get('form#login').submit();
 				cy.get('form#login', {timeout: 30000}).should('not.exist');
 			}
+		});
+	};
+
+	// Resolves the author role once, from a published article of the journal.
+	const withAuthorGroup = (callback) => {
+		if (authorGroupId) {
+			return cy.wrap(authorGroupId, {log: false}).then(callback);
+		}
+		cy.request(pageUrl('api/v1/submissions?status=3&count=5')).then((listing) => {
+			const items = (typeof listing.body === 'string' ? JSON.parse(listing.body) : listing.body).items;
+			expect(items, 'a published article to read the author role from').to.have.length.at.least(1);
+			cy.request({
+				url: pageUrl('api/v1/submissions/' + items[0].id),
+				headers: {'X-Csrf-Token': csrfToken},
+			}).then((detail) => {
+				const body = typeof detail.body === 'string' ? JSON.parse(detail.body) : detail.body;
+				const author = (body.publications || []).flatMap((publication) => publication.authors || [])
+					.find((candidate) => candidate.userGroupId);
+				expect(author, 'an author with a role').to.not.be.undefined;
+				authorGroupId = author.userGroupId;
+				callback(authorGroupId);
+			});
 		});
 	};
 
@@ -173,6 +198,7 @@ describe('Coauthor Participants plugin', function() {
 	it('Links the co-authors when the submission is completed', function() {
 		login(adminUser, adminPassword);
 		getCsrfToken();
+		cy.then(() => withAuthorGroup(() => {}));
 
 		if (!submissionId) {
 			// PKP test data: a complete submission with one extra contributor.
@@ -186,7 +212,7 @@ describe('Coauthor Participants plugin', function() {
 					familyName: {en: 'Coauthor'},
 					country: 'BR',
 					email: coauthorEmail,
-					userGroupId: Cypress.env('authorUserGroupId'),
+					userGroupId: authorGroupId,
 				}],
 			};
 			cy.then(() => cy.createSubmissionWithApi(data, csrfToken));
@@ -208,13 +234,14 @@ describe('Coauthor Participants plugin', function() {
 		cy.then(() => request('GET', `/submissions/${submissionId}`)).then((response) => {
 			expect(response.status).to.eq(200);
 			const publicationId = response.body.currentPublicationId;
-			const authorGroupId = response.body.publications[0].authors?.[0]?.userGroupId || Cypress.env('authorUserGroupId');
+			const groupId = response.body.publications[0].authors?.[0]?.userGroupId || authorGroupId;
+
 			return request('POST', `/submissions/${submissionId}/publications/${publicationId}/contributors`, {
 				givenName: {[response.body.locale]: 'Late'},
 				familyName: {[response.body.locale]: 'Contributor'},
 				country: 'BR',
 				email: lateEmail,
-				userGroupId: authorGroupId,
+				userGroupId: groupId,
 			});
 		}).its('status').should('eq', 200);
 
