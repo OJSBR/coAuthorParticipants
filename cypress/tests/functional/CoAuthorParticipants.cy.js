@@ -224,6 +224,16 @@ describe('Coauthor Participants plugin', function() {
 		cy.then(() => request('PUT', `/submissions/${submissionId}/submit`, {}))
 			.its('status').should('eq', 200);
 
+		// What the journal actually has at this point, so that a failure here says
+		// whether the co-author was on the publication and which roles exist.
+		cy.then(() => request('GET', `/submissions/${submissionId}`)).then((response) => {
+			const publication = (response.body.publications || []).find((p) => p.id === response.body.currentPublicationId) || {};
+			cy.log('DIAG autores: ' + (publication.authors || []).map((a) => a.email + '/' + a.userGroupId).join(' | '));
+		});
+		cy.then(() => request('GET', `/submissions/${submissionId}/participants`)).then((response) => {
+			cy.log('DIAG participantes: ' + (response.body || []).map((p) => p.email).join(' | '));
+		});
+
 		cy.then(() => participantEmails(submissionId)).should('include', coauthorEmail);
 	});
 
