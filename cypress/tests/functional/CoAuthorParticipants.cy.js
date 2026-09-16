@@ -237,6 +237,12 @@ describe('Coauthor Participants plugin', function() {
 		cy.then(() => request('GET', `/submissions/${submissionId}/participants`)).then((response) => {
 			cy.log('DIAG participantes: ' + (response.body || []).map((p) => p.email).join(' | '));
 		});
+		// Whether the plugin is registered at all on an API request: it adds its
+		// mailable in the same place where it starts listening for the submission.
+		cy.then(() => request('GET', '/mailables')).then((response) => {
+			const found = JSON.stringify(response.body || []).includes('CoauthorParticipantAssigned');
+			cy.log('DIAG plugin carregado na API: ' + found);
+		});
 
 		cy.then(() => participantEmails(submissionId)).should('include', coauthorEmail);
 	});
