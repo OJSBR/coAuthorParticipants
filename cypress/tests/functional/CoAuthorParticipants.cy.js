@@ -224,26 +224,6 @@ describe('Coauthor Participants plugin', function() {
 		cy.then(() => request('PUT', `/submissions/${submissionId}/submit`, {}))
 			.its('status').should('eq', 200);
 
-		// What the journal actually has at this point, so that a failure here says
-		// whether the co-author was on the publication and with which role. The
-		// submission response carries publications without their authors: the
-		// authors come from the publication's own entry.
-		cy.then(() => request('GET', `/submissions/${submissionId}`)).then((response) => {
-			const publicationId = response.body.currentPublicationId;
-			cy.then(() => request('GET', `/submissions/${submissionId}/publications/${publicationId}`)).then((pub) => {
-				cy.log('DIAG autores: ' + (pub.body.authors || []).map((a) => a.email + '/' + a.userGroupId).join(' | '));
-			});
-		});
-		cy.then(() => request('GET', `/submissions/${submissionId}/participants`)).then((response) => {
-			cy.log('DIAG participantes: ' + (response.body || []).map((p) => p.email).join(' | '));
-		});
-		// Whether the plugin is registered at all on an API request: it adds its
-		// mailable in the same place where it starts listening for the submission.
-		cy.then(() => request('GET', '/mailables')).then((response) => {
-			const found = JSON.stringify(response.body || []).includes('CoauthorParticipantAssigned');
-			cy.log('DIAG plugin carregado na API: ' + found);
-		});
-
 		cy.then(() => participantEmails(submissionId)).should('include', coauthorEmail);
 	});
 

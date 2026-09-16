@@ -167,7 +167,11 @@ Running a run again changes nothing: no duplicate account, role, participant or 
   policy, concurrency error detection, the backfill options, the listener never throwing, delivery
   detection with an accepting and a refusing transport, the account built for a contributor, the
   plugin classes compiled against the running PKP version, the email template and its variables,
-  and every translation (keys, placeholders and HTML).
+  and every translation (keys, placeholders and HTML). It also completes a submission with a
+  co-author against a real database and checks that the co-author becomes a participant — the check
+  that caught two faults of this release: a plugin folder copied onto the server and switched on
+  from the plugins grid never ran its migration, and the insert into the plugin's own table asked
+  PostgreSQL to return a column named `id`, so **linking never worked on PostgreSQL**.
 
   The suite runs on PKP's own `PKPTestCase` under PKP's PHPUnit, the way the official plugins do:
 
@@ -290,6 +294,10 @@ cobrindo os critérios de aceite: contas novas, existentes, desabilitadas e de o
 e-mail inválido, coautores cadastrados em outro grupo vinculados como autor, reprocessamento sem
 duplicidade, simulação sem gravação, elegibilidade por status, falha SMTP registrada sem afetar a
 submissão, link de senha, troca e restauração da confirmação nativa e execuções concorrentes forçadas.
+A suíte também completa uma submissão com coautor contra um banco real e confere que ele vira
+participante — foi essa verificação que pegou as duas falhas desta versão: uma pasta copiada no
+servidor e ligada pela grade nunca rodava a migração, e a gravação na tabela do plugin pedia ao
+PostgreSQL uma coluna `id` inexistente, de modo que **o vínculo nunca funcionou em PostgreSQL**.
 
 ### Créditos e autoria
 
