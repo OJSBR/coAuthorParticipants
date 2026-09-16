@@ -16,7 +16,7 @@ namespace APP\plugins\generic\coAuthorParticipants\tests;
 
 use APP\plugins\generic\coAuthorParticipants\classes\BackfillOptions;
 
-class BackfillCommandTest extends TestCase
+class BackfillCommandTest extends PluginTestCase
 {
     public function testFlagsAndValuesAreParsed(): void
     {

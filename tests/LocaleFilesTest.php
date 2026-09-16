@@ -15,7 +15,7 @@
 
 namespace APP\plugins\generic\coAuthorParticipants\tests;
 
-class LocaleFilesTest extends TestCase
+class LocaleFilesTest extends PluginTestCase
 {
     /** Locale codes shipped by the plugin, using the OJS 3.5 (Weblate) codes. */
     public const LOCALES = [

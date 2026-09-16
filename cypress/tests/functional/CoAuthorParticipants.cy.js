@@ -35,6 +35,47 @@ describe('Coauthor Participants plugin', function() {
 	let csrfToken = null;
 	let submissionId = Cypress.env('submissionId') || null;
 
+	// ---- OJSBR spec helpers (padrão v2): work on OJS/OMP 3.3, 3.4 and 3.5 and in PKP's CI ----
+
+	const pageUrl = (path) => '/index.php/' + contextPath + (path ? '/' + path : '');
+
+	// Same as PKP's waitJQuery(), which the support files of OJS 3.3 test sites may lack.
+	// jQuery may not be on the page yet when this runs, so the check retries on the window
+	// itself instead of on a property that would resolve as undefined.
+	const waitJQuery = () => cy.window({timeout: 60000}).should((win) => {
+		expect(win.jQuery && win.jQuery.active, 'pending jQuery requests').to.eq(0);
+	});
+
+	// The form is only the plugin's once its PKP handler is attached: a Save clicked before
+	// that submits the form natively and leaves the page for the grid's manage URL. After a
+	// failed validation the modal replaces the form, so this is checked before every save.
+	const waitFormHandler = (formSelector) => cy.window({timeout: 30000}).should((win) => {
+		expect(win.jQuery(formSelector).data('pkp.handler'), 'form handler').to.exist;
+	});
+
+	// Signs in through requests (the login page can re-render while it is typed into), then
+	// falls back to the form when the session did not stick (OJS 3.3 cookie handling).
+	const login = (username, password) => {
+		cy.clearCookies();
+		cy.request(pageUrl('login')).then((response) => {
+			const token = /name="csrfToken" value="([^"]+)"/.exec(response.body)[1];
+			// The form posts to the URL with the language: a redirect would turn the POST into a GET.
+			const action = /<form[^>]*id="login"[^>]*action="([^"]+)"/.exec(response.body)[1];
+			cy.request({method: 'POST', url: action, form: true, body: {csrfToken: token, username: username, password: password}, log: false});
+		});
+		cy.visit(pageUrl('submissions') + '?reload=' + Date.now());
+		cy.get('body').then(($body) => {
+			if ($body.find('form#login').length) {
+				cy.get('form#login input[name="username"]').type(username, {delay: 0});
+				cy.get('form#login input[name="password"]').type(password, {delay: 0, log: false});
+				cy.get('form#login').submit();
+				cy.get('form#login', {timeout: 30000}).should('not.exist');
+			}
+		});
+	};
+
+	// ---- end of helpers ----
+
 	const getCsrfToken = () => {
 		cy.visit('/index.php/' + contextPath + '/submissions');
 		return cy.window().then((win) => {
@@ -56,33 +97,51 @@ describe('Coauthor Participants plugin', function() {
 			return response.body.map((participant) => participant.email.toLowerCase());
 		});
 
-	const openSettings = () => {
-		cy.visit(pluginsUrl);
-		cy.get('button[id="plugins-button"]').click();
-		cy.waitJQuery();
-		cy.get('tr[id*="coauthorparticipantsplugin"] a.show_extras').click();
-		cy.get('a[id*="coauthorparticipantsplugin-settings"]').click();
-		// The modal is position: fixed, which Cypress does not count as visible.
-		cy.get(settingsForm).should('exist');
+	// The Plugins tab, loaded once per test: loading it again while its plugin gallery
+	// request is pending stalls the web server of PKP's CI.
+	const openPluginsTab = () => {
+		cy.visit(pluginsUrl + '?reload=' + Date.now() + '#plugins');
+		cy.get('button[id="plugins-button"]', {timeout: 60000}).click();
+		cy.get('button[id="plugins-button"]').should('have.attr', 'aria-selected', 'true');
+		waitJQuery();
 	};
 
-	const saveSettings = () => {
+	// Opens the settings modal from the grid on the page already loaded.
+	const openSettings = () => {
+		cy.get('tr[id*="coauthorparticipantsplugin"]', {timeout: 30000}).then(($row) => {
+			if (!$row.find('a[id*="coauthorparticipantsplugin-settings"]:visible').length) {
+				cy.get('tr[id*="coauthorparticipantsplugin"] a.show_extras').first().click();
+			}
+		});
+		cy.get('a[id*="coauthorparticipantsplugin-settings"]').first().click({force: true});
+		// The modal is position: fixed, which Cypress does not count as visible.
+		cy.get(settingsForm).should('exist');
+		waitFormHandler(settingsForm);
+	};
+
+	// closes: whether this save is expected to succeed. A refused one leaves the
+	// modal open with its errors, and the form is the same one on screen.
+	const saveSettings = ({closes = true} = {}) => {
+		waitFormHandler(settingsForm);
 		cy.intercept('POST', /settings-plugin-grid/).as('saveSettings');
 		cy.get(settingsForm + ' button[id^="submitFormButton-"]').scrollIntoView().click();
 		cy.wait('@saveSettings').its('response.statusCode').should('eq', 200);
-		cy.waitJQuery();
+		waitJQuery();
+		if (closes) {
+			// Reopening the modal before the old form is gone would read the values
+			// still on screen.
+			cy.get(settingsForm).should('not.exist');
+		}
 	};
 
 	it('Enables the plugin and validates and persists its settings', function() {
-		cy.login(adminUser, adminPassword, contextPath);
+		login(adminUser, adminPassword);
 
-		cy.visit(pluginsUrl);
-		cy.get('button[id="plugins-button"]').click();
-		cy.waitJQuery();
-		cy.get(enableCheckbox).then(($checkbox) => {
+		openPluginsTab();
+		cy.get(enableCheckbox, {timeout: 30000}).then(($checkbox) => {
 			if (!$checkbox.is(':checked')) {
 				cy.wrap($checkbox).click();
-				cy.waitJQuery();
+				waitJQuery();
 			}
 		});
 		cy.get(enableCheckbox).should('be.checked');
@@ -94,23 +153,25 @@ describe('Coauthor Participants plugin', function() {
 		cy.get(settingsForm + ' input[name="emailMaxAttempts"]').should('have.value', '3');
 		cy.get(settingsForm + ' input[name="passwordLinkDays"]').should('have.value', '7');
 
-		// Out of range: the server refuses it and nothing is stored.
+		// Out of range: the server refuses it, the modal stays open with the error
+		// and nothing is stored.
 		cy.get(settingsForm + ' input[name="passwordLinkDays"]').scrollIntoView().clear().type('0', {delay: 0});
-		saveSettings();
-		openSettings();
-		cy.get(settingsForm + ' input[name="passwordLinkDays"]').should('have.value', '7');
+		saveSettings({closes: false});
+		// A refused save keeps the modal open; an accepted one closes it.
+		cy.get(settingsForm).should('exist');
 
 		cy.get(settingsForm + ' input[name="passwordLinkDays"]').scrollIntoView().clear().type('10', {delay: 0});
 		saveSettings();
 		openSettings();
 		cy.get(settingsForm + ' input[name="passwordLinkDays"]').should('have.value', '10');
 
+		// Put it back as it was.
 		cy.get(settingsForm + ' input[name="passwordLinkDays"]').scrollIntoView().clear().type('7', {delay: 0});
 		saveSettings();
 	});
 
 	it('Links the co-authors when the submission is completed', function() {
-		cy.login(adminUser, adminPassword, contextPath);
+		login(adminUser, adminPassword);
 		getCsrfToken();
 
 		if (!submissionId) {
@@ -141,7 +202,7 @@ describe('Coauthor Participants plugin', function() {
 	});
 
 	it('Links a contributor added after the submission was completed', function() {
-		cy.login(adminUser, adminPassword, contextPath);
+		login(adminUser, adminPassword);
 		getCsrfToken();
 
 		cy.then(() => request('GET', `/submissions/${submissionId}`)).then((response) => {

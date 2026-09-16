@@ -22,7 +22,7 @@ use APP\submission\Submission;
 use PKP\observers\events\SubmissionSubmitted;
 use RuntimeException;
 
-class SubmissionSubmittedListenerTest extends TestCase
+class SubmissionSubmittedListenerTest extends PluginTestCase
 {
     public function testAFailureInTheServiceNeverReachesTheAuthorsRequest(): void
     {

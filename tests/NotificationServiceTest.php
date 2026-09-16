@@ -30,7 +30,7 @@ use Symfony\Component\Mailer\SentMessage;
 use Symfony\Component\Mailer\Transport\TransportInterface;
 use Symfony\Component\Mime\RawMessage;
 
-class NotificationServiceTest extends TestCase
+class NotificationServiceTest extends PluginTestCase
 {
     public function testAMessageAcceptedByTheTransportCountsAsSent(): void
     {

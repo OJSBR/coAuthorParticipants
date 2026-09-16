@@ -26,7 +26,7 @@ use Illuminate\Support\Collection;
 use PDOException;
 use PKP\userGroup\UserGroup;
 
-class CoauthorParticipantServiceTest extends TestCase
+class CoauthorParticipantServiceTest extends PluginTestCase
 {
     public function testOnlyCompletedQueuedOrScheduledSubmissionsAreEligible(): void
     {

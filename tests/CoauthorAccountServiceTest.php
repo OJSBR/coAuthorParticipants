@@ -19,7 +19,7 @@ use APP\journal\Journal;
 use APP\plugins\generic\coAuthorParticipants\classes\CoauthorAccountService;
 use PKP\security\Validation;
 
-class CoauthorAccountServiceTest extends TestCase
+class CoauthorAccountServiceTest extends PluginTestCase
 {
     public function testUsernameComesFromTheName(): void
     {

@@ -1,10 +1,10 @@
 # Coauthor Participants — OJS plugin
 
 [![OJS](https://img.shields.io/badge/OJS-3.5-brightgreen)](https://pkp.sfu.ca/ojs/)
-[![Version](https://img.shields.io/badge/version-1.0.0.0-blue)](version.xml)
+[![Version](https://img.shields.io/badge/version-1.0.1.0-blue)](version.xml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)](LICENSE)
 
-**⬇️ Install package:** [OJS 3.5](https://github.com/OJSBR/coAuthorParticipants/releases/download/1.0.0.0/coAuthorParticipants-1.0.0.0.tar.gz) — or browse all [Releases](../../releases).
+**⬇️ Install package:** [OJS 3.5](https://github.com/OJSBR/coAuthorParticipants/releases/download/1.0.1.0/coAuthorParticipants-1.0.1.0.tar.gz) — or browse all [Releases](../../releases).
 
 A generic plugin for **Open Journal Systems (OJS)** that turns the co-authors listed in a
 submission's contributors into **users taking part in the editorial workflow of that
@@ -18,7 +18,7 @@ command line, on earlier submissions still in the workflow.
 
 | OJS version | Branch | Plugin release |
 |-------------|--------|----------------|
-| OJS 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.0 |
+| OJS 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.1.0 |
 
 OJS 3.3 and 3.4 are not supported: roles, assignments and events changed in 3.5.
 
@@ -169,8 +169,10 @@ Running a run again changes nothing: no duplicate account, role, participant or 
   plugin classes compiled against the running PKP version, the email template and its variables,
   and every translation (keys, placeholders and HTML).
 
+  The suite runs on PKP's own `PKPTestCase` under PKP's PHPUnit, the way the official plugins do:
+
   ```bash
-  php plugins/generic/coAuthorParticipants/tests/run.php
+  php lib/pkp/lib/vendor/bin/phpunit --configuration lib/pkp/tests/phpunit.xml plugins/generic/coAuthorParticipants/tests
   ```
 
 - **Cypress** (`cypress/tests/functional/CoAuthorParticipants.cy.js`): settings validation and
@@ -211,7 +213,7 @@ comando, nas submissões anteriores que ainda estão no fluxo.
 
 | Versão do OJS | Branch | Release do plugin |
 |---------------|--------|-------------------|
-| OJS 3.5.x     | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.0.0.0 |
+| OJS 3.5.x     | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.0.1.0 |
 
 OJS 3.3 e 3.4 não são suportados: papéis, atribuições e eventos mudaram no 3.5.
 
@@ -282,7 +284,7 @@ parâmetros inválidos.
 
 ### Testes
 
-Suíte PHP em `tests/` (PHPUnit do PKP ou `php plugins/generic/coAuthorParticipants/tests/run.php`),
+Suíte PHP em `tests/`, sobre o `PKPTestCase` do próprio PKP, como nos plugins oficiais,
 teste Cypress em `cypress/tests/functional/` e bateria funcional numa instalação real do OJS 3.5
 cobrindo os critérios de aceite: contas novas, existentes, desabilitadas e de outra revista,
 e-mail inválido, coautores cadastrados em outro grupo vinculados como autor, reprocessamento sem

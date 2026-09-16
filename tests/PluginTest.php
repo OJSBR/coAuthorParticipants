@@ -25,7 +25,7 @@ use PKP\log\SubmissionEmailLogEventType;
 use ReflectionClass;
 use ReflectionNamedType;
 
-class PluginTest extends TestCase
+class PluginTest extends PluginTestCase
 {
     public function testOverriddenMethodsDeclareTheReturnTypesOfThisPkpVersion(): void
     {
