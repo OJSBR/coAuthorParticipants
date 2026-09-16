@@ -225,10 +225,14 @@ describe('Coauthor Participants plugin', function() {
 			.its('status').should('eq', 200);
 
 		// What the journal actually has at this point, so that a failure here says
-		// whether the co-author was on the publication and which roles exist.
+		// whether the co-author was on the publication and with which role. The
+		// submission response carries publications without their authors: the
+		// authors come from the publication's own entry.
 		cy.then(() => request('GET', `/submissions/${submissionId}`)).then((response) => {
-			const publication = (response.body.publications || []).find((p) => p.id === response.body.currentPublicationId) || {};
-			cy.log('DIAG autores: ' + (publication.authors || []).map((a) => a.email + '/' + a.userGroupId).join(' | '));
+			const publicationId = response.body.currentPublicationId;
+			cy.then(() => request('GET', `/submissions/${submissionId}/publications/${publicationId}`)).then((pub) => {
+				cy.log('DIAG autores: ' + (pub.body.authors || []).map((a) => a.email + '/' + a.userGroupId).join(' | '));
+			});
 		});
 		cy.then(() => request('GET', `/submissions/${submissionId}/participants`)).then((response) => {
 			cy.log('DIAG participantes: ' + (response.body || []).map((p) => p.email).join(' | '));
