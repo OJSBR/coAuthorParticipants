@@ -98,7 +98,9 @@ class ParticipantLog
         ];
 
         try {
-            return (int) DB::table(self::TABLE)->insertGetId($row);
+            // The key of this table is not "id": PostgreSQL needs the column
+            // named, or the insert comes back with `returning "id"` and fails.
+            return (int) DB::table(self::TABLE)->insertGetId($row, self::KEY);
         } catch (QueryException $e) {
             if (CoauthorAccountService::isConcurrencyError($e)) {
                 // Never look the row up again here: inside the same transaction
