@@ -24,7 +24,9 @@ use APP\core\PageRouter;
 use APP\facades\Repo;
 use APP\plugins\generic\coAuthorParticipants\CoAuthorParticipantsPlugin;
 use APP\submission\Submission;
+use APP\plugins\generic\coAuthorParticipants\classes\migrations\CoauthorParticipantLogMigration;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 use PKP\core\PKPRequest;
 use PKP\plugins\PluginRegistry;
 use PKP\security\Role;
@@ -192,6 +194,23 @@ class SubmitLinksCoauthorsTest extends PluginTestCase
             }
         }
         return array_values(array_unique($emails));
+    }
+
+    public function testTheLogTableIsCreatedWhenThePluginIsSwitchedOnWithoutIt(): void
+    {
+        $plugin = $this->loadPlugin();
+
+        // A plugin copied onto the server by hand never ran its migration: the
+        // table is missing and every contributor would fail against it.
+        Schema::dropIfExists(CoauthorParticipantLogMigration::TABLE);
+        $this->assertFalse(Schema::hasTable(CoauthorParticipantLogMigration::TABLE));
+
+        $plugin->ensureSchema();
+
+        $this->assertTrue(
+            Schema::hasTable(CoauthorParticipantLogMigration::TABLE),
+            'switching the plugin on must leave it with a table to write to'
+        );
     }
 
     public function testCompletingASubmissionMakesItsCoauthorAParticipant(): void

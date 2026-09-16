@@ -22,6 +22,7 @@ use APP\plugins\generic\coAuthorParticipants\classes\mailables\CoauthorParticipa
 use APP\plugins\generic\coAuthorParticipants\classes\migrations\CoauthorParticipantLogMigration;
 use APP\plugins\generic\coAuthorParticipants\classes\SyncOptions;
 use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Schema;
 use PKP\context\Context;
 use PKP\core\JSONMessage;
 use PKP\linkAction\LinkAction;
@@ -99,6 +100,28 @@ class CoAuthorParticipantsPlugin extends GenericPlugin
     }
 
     /**
+     * Create the plugin's own table when it is not there yet.
+     *
+     * The migration runs when the plugin is installed through the interface or
+     * the gallery; a folder copied onto the server by hand and switched on from
+     * the plugins grid never runs it, and every linked contributor would then
+     * fail against a table that does not exist. The migration is idempotent, so
+     * calling it here is safe.
+     */
+    public function ensureSchema(): void
+    {
+        if (Schema::hasTable(CoauthorParticipantLogMigration::TABLE)) {
+            return;
+        }
+
+        try {
+            $this->getInstallMigration()->up();
+        } catch (Throwable $e) {
+            error_log('[coAuthorParticipants] the log table could not be created: ' . $e->getMessage());
+        }
+    }
+
+    /**
      * @copydoc Plugin::getInstallMigration()
      */
     public function getInstallMigration()
@@ -124,6 +147,10 @@ class CoAuthorParticipantsPlugin extends GenericPlugin
     public function setEnabled($enabled)
     {
         parent::setEnabled($enabled);
+
+        if ($enabled) {
+            $this->ensureSchema();
+        }
 
         $context = Application::get()->getRequest()->getContext();
         if (!$context) {
@@ -200,6 +227,7 @@ class CoAuthorParticipantsPlugin extends GenericPlugin
                 return Hook::CONTINUE;
             }
 
+            $this->ensureSchema();
             $this->getService()->synchronizeSubmission(
                 $submission,
                 $context,

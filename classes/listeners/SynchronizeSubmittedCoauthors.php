@@ -32,6 +32,10 @@ class SynchronizeSubmittedCoauthors
                 return;
             }
 
+            // A journal that copied the plugin onto the server and switched it on
+            // before this was fixed may still have no table of its own.
+            $this->plugin->ensureSchema();
+
             $this->plugin->getService()->synchronizeSubmission(
                 $event->submission,
                 $event->context,
