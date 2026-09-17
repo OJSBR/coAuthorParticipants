@@ -27,6 +27,8 @@ use APP\submission\Submission;
 use APP\plugins\generic\coAuthorParticipants\classes\migrations\CoauthorParticipantLogMigration;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
+use APP\plugins\generic\coAuthorParticipants\classes\CoauthorEmailLogEventType;
+use APP\plugins\generic\coAuthorParticipants\classes\ParticipantLog;
 use PKP\core\PKPRequest;
 use PKP\plugins\PluginRegistry;
 use PKP\security\Role;
@@ -239,5 +241,74 @@ class SubmitLinksCoauthorsTest extends PluginTestCase
         $user = Repo::user()->getByEmail($this->coauthorEmail, true);
         $this->assertNotNull($user, 'no account was created for the co-author');
         $this->assertSame(strtolower($this->coauthorEmail), strtolower($user->getEmail()));
+    }
+
+    /**
+     * What was done for the co-author has to be visible afterwards: the role that
+     * lets them open the submission, the row that says what happened, and either
+     * the message in the e-mail log of the submission or the failure written down.
+     *
+     * Silence is the failure this guards against: a co-author who was linked,
+     * never told, and left no trace of it.
+     */
+    public function testWhatWasDoneForTheCoauthorIsWrittenDownAndCanBeAudited(): void
+    {
+        $this->loadPlugin();
+        $context = Application::getContextDAO()->getById(self::CONTEXT_ID);
+        $submission = $this->submissionAwaitingSubmit();
+
+        Repo::submission()->submit($submission, $context);
+
+        $user = Repo::user()->getByEmail($this->coauthorEmail, true);
+        $this->assertNotNull($user, 'no account was created for the co-author');
+
+        // The role of the journal, without which being a participant is of no use.
+        $groups = DB::table('user_user_groups as uug')
+            ->join('user_groups as ug', 'ug.user_group_id', '=', 'uug.user_group_id')
+            ->where('uug.user_id', $user->getId())
+            ->where('ug.context_id', self::CONTEXT_ID)
+            ->pluck('ug.role_id')
+            ->all();
+        $this->assertContains(
+            Role::ROLE_ID_AUTHOR,
+            array_map('intval', $groups),
+            'the co-author was not given an author role of the journal; roles: ' . implode(', ', $groups)
+        );
+
+        // One row of the log, saying what was done.
+        $row = DB::table(ParticipantLog::TABLE)
+            ->where('submission_id', $submission->getId())
+            ->where('user_id', $user->getId())
+            ->first();
+        $this->assertNotNull($row, 'nothing was written to ' . ParticipantLog::TABLE . ' for the co-author');
+        $this->assertTrue((bool) $row->account_created, 'the row does not say the account was created');
+        $this->assertTrue((bool) $row->assignment_created, 'the row does not say the assignment was created');
+
+        // And the message. Three ends are acceptable and each one has to be
+        // visible: it went out and is in the e-mail log of the submission; it is
+        // waiting in the queue and the job for it is really there; or it failed
+        // and the reason is written down. What is not acceptable is a co-author
+        // left waiting with nothing behind it.
+        if ($row->email_status === ParticipantLog::EMAIL_SENT) {
+            $logged = DB::table('email_log')
+                ->where('assoc_type', Application::ASSOC_TYPE_SUBMISSION)
+                ->where('assoc_id', $submission->getId())
+                ->where('event_type', CoauthorEmailLogEventType::COAUTHOR_PARTICIPANT_ASSIGNED->value)
+                ->count();
+            $this->assertGreaterThan(0, $logged, 'the message counts as sent but is in no e-mail log of the submission');
+        } elseif (in_array($row->email_status, [ParticipantLog::EMAIL_PENDING, ParticipantLog::EMAIL_SENDING], true)) {
+            // The queue runs outside the test; what has to exist here is the job.
+            $queued = DB::table('jobs')->where('payload', 'like', '%SendCoauthorAssignmentEmail%')->count();
+            $this->assertGreaterThan(
+                0,
+                $queued,
+                'the message is waiting (' . $row->email_status . ') and no job was queued to send it'
+            );
+        } else {
+            $this->assertNotEmpty(
+                $row->last_error,
+                'the message did not go out (' . $row->email_status . ') and nothing says why'
+            );
+        }
     }
 }
