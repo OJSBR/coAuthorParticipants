@@ -1,10 +1,10 @@
 # Coauthor Participants — OJS plugin
 
 [![OJS](https://img.shields.io/badge/OJS-3.5-brightgreen)](https://pkp.sfu.ca/ojs/)
-[![Version](https://img.shields.io/badge/version-1.0.1.0-blue)](version.xml)
+[![Version](https://img.shields.io/badge/version-5.0.0.0-blue)](version.xml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)](LICENSE)
 
-**⬇️ Install package:** [OJS 3.5](https://github.com/OJSBR/coAuthorParticipants/releases/download/1.0.1.0/coAuthorParticipants-1.0.1.0.tar.gz) — or browse all [Releases](../../releases).
+**⬇️ Install package:** [OJS 3.5](https://github.com/OJSBR/coAuthorParticipants/releases/download/5.0.0.0/coAuthorParticipants-5.0.0.0.tar.gz) — or browse all [Releases](../../releases).
 
 A generic plugin for **Open Journal Systems (OJS)** that turns the co-authors listed in a
 submission's contributors into **users taking part in the editorial workflow of that
@@ -18,7 +18,7 @@ command line, on earlier submissions still in the workflow.
 
 | OJS version | Branch | Plugin release |
 |-------------|--------|----------------|
-| OJS 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.1.0 |
+| OJS 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 5.0.0.0 |
 
 OJS 3.3 and 3.4 are not supported: roles, assignments and events changed in 3.5.
 
@@ -217,7 +217,7 @@ comando, nas submissões anteriores que ainda estão no fluxo.
 
 | Versão do OJS | Branch | Release do plugin |
 |---------------|--------|-------------------|
-| OJS 3.5.x     | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.0.1.0 |
+| OJS 3.5.x     | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 5.0.0.0 |
 
 OJS 3.3 e 3.4 não são suportados: papéis, atribuições e eventos mudaram no 3.5.
 
